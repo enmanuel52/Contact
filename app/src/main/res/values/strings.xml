@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Contact</string>
+    <string name="tv_recycler_name">Name</string>
+    <string name="ivDescription">Person Image</string>
+    <string name="tv_recycler_number">Number</string>
+    <string name="menu_item_delete">Delete</string>
+    <string name="menu_item_add">Add</string>
+    <string name="menu_item_save">Save</string>
+    <string name="tv_email">Email</string>
+    <string name="scrollable">Scroll</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update">Update</string>
+    <string name="tAdd">Add/ Edit</string>
+    <string name="tDetails">Details</string>
+</resources>

@@ -1,0 +1,1 @@
+[{"navFile":"src\\main\\res\\navigation\\nav_graph.xml","javaFiles":["com.example.contact.ui.view.fragment.MainFragmentDirections","com.example.contact.ui.view.fragment.DetailsFragmentDirections","com.example.contact.ui.view.fragment.DetailsFragmentArgs","com.example.contact.ui.view.fragment.AddFragmentArgs"]}]
