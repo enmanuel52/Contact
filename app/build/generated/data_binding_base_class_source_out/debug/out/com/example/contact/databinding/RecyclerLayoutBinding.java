@@ -4,6 +4,7 @@ package com.example.contact.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,14 +21,18 @@ public final class RecyclerLayoutBinding implements ViewBinding {
   private final MaterialCardView rootView;
 
   @NonNull
+  public final FrameLayout avatar;
+
+  @NonNull
   public final TextView tvLetter;
 
   @NonNull
   public final TextView tvName;
 
-  private RecyclerLayoutBinding(@NonNull MaterialCardView rootView, @NonNull TextView tvLetter,
-      @NonNull TextView tvName) {
+  private RecyclerLayoutBinding(@NonNull MaterialCardView rootView, @NonNull FrameLayout avatar,
+      @NonNull TextView tvLetter, @NonNull TextView tvName) {
     this.rootView = rootView;
+    this.avatar = avatar;
     this.tvLetter = tvLetter;
     this.tvName = tvName;
   }
@@ -59,6 +64,12 @@ public final class RecyclerLayoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.avatar;
+      FrameLayout avatar = ViewBindings.findChildViewById(rootView, id);
+      if (avatar == null) {
+        break missingId;
+      }
+
       id = R.id.tvLetter;
       TextView tvLetter = ViewBindings.findChildViewById(rootView, id);
       if (tvLetter == null) {
@@ -71,7 +82,7 @@ public final class RecyclerLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RecyclerLayoutBinding((MaterialCardView) rootView, tvLetter, tvName);
+      return new RecyclerLayoutBinding((MaterialCardView) rootView, avatar, tvLetter, tvName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

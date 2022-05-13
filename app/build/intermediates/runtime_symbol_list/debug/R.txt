@@ -2678,6 +2678,7 @@ int id auto 0x7f08005b
 int id autoComplete 0x7f08005c
 int id autoCompleteToEnd 0x7f08005d
 int id autoCompleteToStart 0x7f08005e
+int id avatar 0x7f08020f
 int id barrier 0x7f08005f
 int id baseline 0x7f080060
 int id beginOnFirstDraw 0x7f080061

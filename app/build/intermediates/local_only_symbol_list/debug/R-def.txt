@@ -27,6 +27,7 @@ id action_mainFragment_to_detailsFragment
 id addFragment
 id addIcon
 id addToolbar
+id avatar
 id deleteIcon
 id detailsFragment
 id detailsToolbar

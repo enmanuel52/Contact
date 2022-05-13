@@ -36,12 +36,12 @@
                 {
                     "source": "E:\\Enmanuel\\Projects\\Contact\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
-                        "startLines": "2,16",
-                        "startColumns": "4,4",
-                        "startOffsets": "100,820",
-                        "endLines": "14,20",
-                        "endColumns": "12,12",
-                        "endOffsets": "814,1044"
+                        "startLines": "2,-1",
+                        "startColumns": "4,-1",
+                        "startOffsets": "100,-1",
+                        "endLines": "14,-1",
+                        "endColumns": "12,-1",
+                        "endOffsets": "814,-1"
                     },
                     "to": {
                         "startLines": "9,22",

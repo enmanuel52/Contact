@@ -2679,6 +2679,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id avatar
 id barrier
 id baseline
 id beginOnFirstDraw

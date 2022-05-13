@@ -81,12 +81,12 @@
                 {
                     "source": "E:\\Enmanuel\\Projects\\Contact\\app\\src\\main\\res\\values\\themes.xml",
                     "from": {
-                        "startLines": "2,16",
-                        "startColumns": "4,4",
-                        "startOffsets": "100,820",
-                        "endLines": "14,20",
-                        "endColumns": "12,12",
-                        "endOffsets": "814,1044"
+                        "startLines": "2,-1",
+                        "startColumns": "4,-1",
+                        "startOffsets": "100,-1",
+                        "endLines": "14,-1",
+                        "endColumns": "12,-1",
+                        "endOffsets": "814,-1"
                     },
                     "to": {
                         "startLines": "5685,5698",
@@ -115,11 +115,9 @@
                 {
                     "source": "E:\\Enmanuel\\Projects\\Contact\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,-1,9,10,11,-1,-1,-1",
-                        "startColumns": "-1,-1,-1,-1,4,4,4,-1,-1,-1",
-                        "startOffsets": "-1,-1,-1,-1,370,412,454,-1,-1,-1",
-                        "endColumns": "-1,-1,-1,-1,41,41,41,-1,-1,-1",
-                        "endOffsets": "-1,-1,-1,-1,407,449,491,-1,-1,-1"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "581,806,807,808,809,810,811,822,823,827",
