@@ -1,7 +1,6 @@
 package com.example.contact.data.database.dao;
 
 import android.database.Cursor;
-import androidx.lifecycle.LiveData;
 import androidx.room.CoroutinesRoom;
 import androidx.room.EntityDeletionOrUpdateAdapter;
 import androidx.room.EntityInsertionAdapter;
@@ -170,44 +169,36 @@ public final class ContactDao_Impl implements ContactDao {
   }
 
   @Override
-  public LiveData<List<ContactEntity>> getAllContacts() {
+  public List<ContactEntity> getAllContacts() {
     final String _sql = "SELECT * FROM contact_table ORDER BY name ASC";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
-    return __db.getInvalidationTracker().createLiveData(new String[]{"contact_table"}, false, new Callable<List<ContactEntity>>() {
-      @Override
-      public List<ContactEntity> call() throws Exception {
-        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
-        try {
-          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
-          final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
-          final int _cursorIndexOfNumber = CursorUtil.getColumnIndexOrThrow(_cursor, "number");
-          final List<ContactEntity> _result = new ArrayList<ContactEntity>(_cursor.getCount());
-          while(_cursor.moveToNext()) {
-            final ContactEntity _item;
-            final int _tmpId;
-            _tmpId = _cursor.getInt(_cursorIndexOfId);
-            final String _tmpName;
-            if (_cursor.isNull(_cursorIndexOfName)) {
-              _tmpName = null;
-            } else {
-              _tmpName = _cursor.getString(_cursorIndexOfName);
-            }
-            final int _tmpNumber;
-            _tmpNumber = _cursor.getInt(_cursorIndexOfNumber);
-            _item = new ContactEntity(_tmpId,_tmpName,_tmpNumber);
-            _result.add(_item);
-          }
-          return _result;
-        } finally {
-          _cursor.close();
+    __db.assertNotSuspendingTransaction();
+    final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+    try {
+      final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+      final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
+      final int _cursorIndexOfNumber = CursorUtil.getColumnIndexOrThrow(_cursor, "number");
+      final List<ContactEntity> _result = new ArrayList<ContactEntity>(_cursor.getCount());
+      while(_cursor.moveToNext()) {
+        final ContactEntity _item;
+        final int _tmpId;
+        _tmpId = _cursor.getInt(_cursorIndexOfId);
+        final String _tmpName;
+        if (_cursor.isNull(_cursorIndexOfName)) {
+          _tmpName = null;
+        } else {
+          _tmpName = _cursor.getString(_cursorIndexOfName);
         }
+        final int _tmpNumber;
+        _tmpNumber = _cursor.getInt(_cursorIndexOfNumber);
+        _item = new ContactEntity(_tmpId,_tmpName,_tmpNumber);
+        _result.add(_item);
       }
-
-      @Override
-      protected void finalize() {
-        _statement.release();
-      }
-    });
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
   }
 
   @Override

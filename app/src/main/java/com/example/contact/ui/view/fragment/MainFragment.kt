@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.contact.ClicListenner
@@ -13,6 +14,8 @@ import com.example.contact.databinding.FragmentMainBinding
 import com.example.contact.ui.adapter.RecyclerAdapter
 import com.example.contact.ui.viewmodel.fragment.MainFragmentViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class MainFragment : Fragment(), ClicListenner {
@@ -41,16 +44,18 @@ class MainFragment : Fragment(), ClicListenner {
     }
 
     private fun updateRecyclerAdapter() {
-        mainFragmentViewModel.contactList.observe(viewLifecycleOwner){
-            recyclerAdapter.items = it
+        lifecycleScope.launch{
+            mainFragmentViewModel.updateView()
+            mainFragmentViewModel.contactList.collect {
+                recyclerAdapter.items = it
+            }
         }
     }
 
     override fun onResume() {
-        updateRecyclerAdapter()
         super.onResume()
+        updateRecyclerAdapter()
     }
-
 
     override fun clic(id: Int) { //send the info
         findNavController().navigate(MainFragmentDirections.actionMainFragmentToDetailsFragment(id))
