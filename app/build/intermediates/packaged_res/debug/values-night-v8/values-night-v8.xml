@@ -14,8 +14,8 @@
         <!-- Customize your theme here. -->
     </style>
     <style name="Theme.Contact.MyTheme">
-        <item name="colorPrimary">@color/red_200</item>
-        <item name="colorPrimaryVariant">@color/red_700</item>
+        <item name="colorPrimary">@color/blue_200</item>
+        <item name="colorPrimaryVariant">@color/blue_700</item>
         <item name="colorOnPrimary">@color/black</item>
     </style>
 </resources>

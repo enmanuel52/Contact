@@ -15,22 +15,21 @@ import com.example.contact.data.database.entities.ContactEntity
 import com.example.contact.databinding.FragmentAddBinding
 import com.example.contact.ui.viewmodel.fragment.AddFragmentViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import dagger.hilt.android.lifecycle.HiltViewModel
 
 @AndroidEntryPoint
 class AddFragment : Fragment() {
 
-    lateinit var _binding: FragmentAddBinding
-    val binding get() = _binding
+    private lateinit var _binding: FragmentAddBinding
+    private val binding get() = _binding
 
-    val args by navArgs<AddFragmentArgs>()
+    private val args by navArgs<AddFragmentArgs>()
 
-    val addFragmentViewModel: AddFragmentViewModel by viewModels()
+    private val addFragmentViewModel: AddFragmentViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentAddBinding.inflate(inflater, container, false)
 
@@ -67,12 +66,12 @@ class AddFragment : Fragment() {
                         addFragmentViewModel.onSave(
                             ContactEntity(
                                 name = name,
-                                number = number.toInt(),
+                                number = number.toLong(),
                             )
                         )
                         findNavController().popBackStack()
                     } else{
-                        Toast.makeText(requireContext(), "Llene todos los campos", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(requireContext(), "Fill all fields", Toast.LENGTH_SHORT).show()
                     }
                     true
                 }

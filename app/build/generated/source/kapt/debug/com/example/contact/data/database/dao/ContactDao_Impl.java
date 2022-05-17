@@ -189,8 +189,8 @@ public final class ContactDao_Impl implements ContactDao {
         } else {
           _tmpName = _cursor.getString(_cursorIndexOfName);
         }
-        final int _tmpNumber;
-        _tmpNumber = _cursor.getInt(_cursorIndexOfNumber);
+        final long _tmpNumber;
+        _tmpNumber = _cursor.getLong(_cursorIndexOfNumber);
         _item = new ContactEntity(_tmpId,_tmpName,_tmpNumber);
         _result.add(_item);
       }
@@ -223,8 +223,8 @@ public final class ContactDao_Impl implements ContactDao {
         } else {
           _tmpName = _cursor.getString(_cursorIndexOfName);
         }
-        final int _tmpNumber;
-        _tmpNumber = _cursor.getInt(_cursorIndexOfNumber);
+        final long _tmpNumber;
+        _tmpNumber = _cursor.getLong(_cursorIndexOfNumber);
         _result = new ContactEntity(_tmpId,_tmpName,_tmpNumber);
       } else {
         _result = null;

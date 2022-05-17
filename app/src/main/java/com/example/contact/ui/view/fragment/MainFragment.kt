@@ -9,7 +9,6 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.contact.ClicListenner
 import com.example.contact.R
-import com.example.contact.data.model.toDomain
 import com.example.contact.databinding.FragmentMainBinding
 import com.example.contact.ui.adapter.RecyclerAdapter
 import com.example.contact.ui.viewmodel.fragment.MainFragmentViewModel
@@ -19,8 +18,8 @@ import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class MainFragment : Fragment(), ClicListenner {
-    lateinit var _binding: FragmentMainBinding
-    val binding get() = _binding
+    private lateinit var _binding: FragmentMainBinding
+    private val binding get() = _binding
     private lateinit var recyclerAdapter: RecyclerAdapter
 
     private val mainFragmentViewModel: MainFragmentViewModel by viewModels()

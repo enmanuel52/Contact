@@ -1260,6 +1260,9 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blue_200
+color blue_500
+color blue_700
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -2784,6 +2787,7 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id etLayoutName
 id etName
 id etNumber
 id exitUntilCollapsed
@@ -3368,7 +3372,6 @@ string installation_cancelled
 string installation_failed
 string installing_module
 string item_view_role_description
-string ivDescription
 string label
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular

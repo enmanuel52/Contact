@@ -4,7 +4,7 @@ import com.example.contact.data.database.entities.ContactEntity
 
 data class Contact(
     val name: String,
-    val number: Int,
+    val number: Long,
 )
 
 fun ContactEntity.toDomain() = Contact(name = name, number = number)
