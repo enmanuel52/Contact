@@ -1260,6 +1260,9 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blue_200
+color blue_500
+color blue_700
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -2508,7 +2511,6 @@ drawable add_icon
 drawable avd_hide_password
 drawable avd_show_password
 drawable back_icon
-drawable boy
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2524,7 +2526,6 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable detete_icon
 drawable edit_icon
-drawable girl
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2784,6 +2785,7 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id etLayoutName
 id etName
 id etNumber
 id exitUntilCollapsed
@@ -3368,7 +3370,6 @@ string installation_cancelled
 string installation_failed
 string installing_module
 string item_view_role_description
-string ivDescription
 string label
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular

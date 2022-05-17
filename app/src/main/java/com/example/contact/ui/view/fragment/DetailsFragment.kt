@@ -12,25 +12,20 @@ import com.example.contact.R
 import com.example.contact.databinding.FragmentDetailsBinding
 import com.example.contact.ui.viewmodel.fragment.DetailsFragmentViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 @AndroidEntryPoint
 class DetailsFragment : Fragment() {
 
-    lateinit var _binding: FragmentDetailsBinding
-    val binding get() = _binding
-    val args by navArgs<DetailsFragmentArgs>()
+    private lateinit var _binding: FragmentDetailsBinding
+    private val binding get() = _binding
+    private val args by navArgs<DetailsFragmentArgs>()
 
-    val detailsFragmentViewModel: DetailsFragmentViewModel by viewModels()
+    private val detailsFragmentViewModel: DetailsFragmentViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentDetailsBinding.inflate(inflater, container, false)
 

@@ -1,6 +1,9 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color blue_200
+color blue_500
+color blue_700
 color purple_200
 color purple_500
 color purple_700
@@ -12,10 +15,8 @@ color teal_700
 color white
 drawable add_icon
 drawable back_icon
-drawable boy
 drawable detete_icon
 drawable edit_icon
-drawable girl
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable icon_save
@@ -32,6 +33,7 @@ id deleteIcon
 id detailsFragment
 id detailsToolbar
 id editIcon
+id etLayoutName
 id etName
 id etNumber
 id fragmentContainerView
@@ -56,7 +58,6 @@ mipmap ic_launcher_round
 navigation nav_graph
 string app_name
 string hello_blank_fragment
-string ivDescription
 string menu_item_add
 string menu_item_delete
 string menu_item_save

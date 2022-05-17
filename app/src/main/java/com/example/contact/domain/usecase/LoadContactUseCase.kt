@@ -1,6 +1,5 @@
 package com.example.contact.domain.usecase
 
-import com.example.contact.data.ContactRepository
 import com.example.contact.domain.repository.Repository
 import javax.inject.Inject
 
