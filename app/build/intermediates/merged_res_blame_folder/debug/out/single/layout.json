@@ -12,10 +12,6 @@
         "source": "E:\\Enmanuel\\Projects\\Contact\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "E:\\Enmanuel\\Projects\\Contact\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\layout_recycler.xml",
-        "source": "E:\\Enmanuel\\Projects\\Contact\\app\\src\\main\\res\\layout\\layout_recycler.xml"
-    },
-    {
         "merged": "E:\\Enmanuel\\Projects\\Contact\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_main.xml",
         "source": "E:\\Enmanuel\\Projects\\Contact\\app\\src\\main\\res\\layout\\fragment_main.xml"
     },
