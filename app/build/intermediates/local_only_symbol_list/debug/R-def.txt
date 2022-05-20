@@ -4,6 +4,12 @@ color black
 color blue_200
 color blue_500
 color blue_700
+color deep_orange_200
+color deep_orange_500
+color deep_orange_700
+color light_blue_200
+color light_blue_500
+color light_blue_700
 color purple_200
 color purple_500
 color purple_700
@@ -17,11 +23,13 @@ drawable add_icon
 drawable back_icon
 drawable detete_icon
 drawable edit_icon
+drawable ic_baseline_phone_iphone_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable icon_save
 drawable selector_recycler
 drawable shape_avatar
+drawable splash_background
 id action_detailsFragment_to_addFragment
 id action_mainFragment_to_addFragment
 id action_mainFragment_to_detailsFragment
@@ -68,5 +76,7 @@ string tv_email
 string tv_recycler_name
 string tv_recycler_number
 string update
+style SplashTheme
 style Theme.Contact
 style Theme.Contact.MyTheme
+style Theme.Contact.MyTheme2

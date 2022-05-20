@@ -36,6 +36,10 @@
         "source": "E:\\Enmanuel\\Projects\\Contact\\app\\src\\main\\res\\layout\\recycler_layout.xml"
     },
     {
+        "merged": "E:\\Enmanuel\\Projects\\Contact\\app\\build\\intermediates\\merged_res\\debug\\drawable_splash_background.xml.flat",
+        "source": "E:\\Enmanuel\\Projects\\Contact\\app\\src\\main\\res\\drawable\\splash_background.xml"
+    },
+    {
         "merged": "E:\\Enmanuel\\Projects\\Contact\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "E:\\Enmanuel\\Projects\\Contact\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
@@ -86,6 +90,10 @@
     {
         "merged": "E:\\Enmanuel\\Projects\\Contact\\app\\build\\intermediates\\merged_res\\debug\\drawable_icon_save.xml.flat",
         "source": "E:\\Enmanuel\\Projects\\Contact\\app\\src\\main\\res\\drawable\\icon_save.xml"
+    },
+    {
+        "merged": "E:\\Enmanuel\\Projects\\Contact\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_phone_iphone_24.xml.flat",
+        "source": "E:\\Enmanuel\\Projects\\Contact\\app\\src\\main\\res\\drawable\\ic_baseline_phone_iphone_24.xml"
     },
     {
         "merged": "E:\\Enmanuel\\Projects\\Contact\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",

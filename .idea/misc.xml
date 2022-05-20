@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Enmanuel/Projects/Contact/app/src/main/res/drawable/ic_baseline_phone_iphone_24.xml" value="0.162" />
         <entry key="..\:/Enmanuel/Projects/Contact/app/src/main/res/drawable/selector_recycler.xml" value="0.1955" />
         <entry key="..\:/Enmanuel/Projects/Contact/app/src/main/res/drawable/shape_avatar.xml" value="0.1955" />
+        <entry key="..\:/Enmanuel/Projects/Contact/app/src/main/res/drawable/splash_background.xml" value="0.162" />
         <entry key="..\:/Enmanuel/Projects/Contact/app/src/main/res/layout-land/fragment_add.xml" value="0.18" />
         <entry key="..\:/Enmanuel/Projects/Contact/app/src/main/res/layout/activity_main.xml" value="0.1875" />
         <entry key="..\:/Enmanuel/Projects/Contact/app/src/main/res/layout/fragment_add.xml" value="0.15" />

@@ -14,4 +14,12 @@
     <color name="blue_500">#2196f3</color>
     <color name="blue_700">#1976d2</color>
 
+
+    <color name="light_blue_200">#81D4FA</color>
+    <color name="light_blue_500">#03A9F4</color>
+    <color name="light_blue_700">#0288D1</color>
+    <color name="deep_orange_200">#FFAB91</color>
+    <color name="deep_orange_500">#FF5722</color>
+    <color name="deep_orange_700">#E64A19</color>
+
 </resources>

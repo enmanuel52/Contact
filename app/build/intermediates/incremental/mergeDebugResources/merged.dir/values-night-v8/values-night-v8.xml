@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
+    <style name="SplashTheme" parent="Theme.Contact.MyTheme2">
+
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
     <style name="Theme.AppCompat.DayNight" parent="Theme.AppCompat"/>
     <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="Theme.AppCompat"/>
     <style name="Theme.AppCompat.DayNight.Dialog" parent="Theme.AppCompat.Dialog"/>
@@ -24,6 +28,12 @@
         <item name="colorPrimary">@color/blue_200</item>
         <item name="colorPrimaryVariant">@color/blue_700</item>
         <item name="colorOnPrimary">@color/black</item>
+    </style>
+    <style name="Theme.Contact.MyTheme2">
+        <item name="colorPrimary">@color/deep_orange_500</item>
+        <item name="colorPrimaryVariant">@color/deep_orange_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+
     </style>
     <style name="Theme.Material3.DayNight" parent="Theme.Material3.Dark"/>
     <style name="Theme.Material3.DayNight.BottomSheetDialog" parent="Theme.Material3.Dark.BottomSheetDialog"/>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
+    <style name="SplashTheme" parent="Theme.Contact.MyTheme2">
+
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
     <style name="Theme.Contact" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
@@ -17,5 +21,11 @@
         <item name="colorPrimary">@color/blue_200</item>
         <item name="colorPrimaryVariant">@color/blue_700</item>
         <item name="colorOnPrimary">@color/black</item>
+    </style>
+    <style name="Theme.Contact.MyTheme2">
+        <item name="colorPrimary">@color/deep_orange_500</item>
+        <item name="colorPrimaryVariant">@color/deep_orange_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+
     </style>
 </resources>

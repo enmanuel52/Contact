@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -14,6 +13,7 @@ import com.example.contact.R
 import com.example.contact.data.database.entities.ContactEntity
 import com.example.contact.databinding.FragmentAddBinding
 import com.example.contact.ui.viewmodel.fragment.AddFragmentViewModel
+import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -63,15 +63,21 @@ class AddFragment : Fragment() {
                     val name = binding.etName.text.toString()
                     val number = binding.etNumber.text.toString()
                     if(name.isNotEmpty() && number.isNotEmpty()) {
-                        addFragmentViewModel.onSave(
-                            ContactEntity(
-                                name = name,
-                                number = number.toLong(),
+                        if(number.length <= 10) {
+                            addFragmentViewModel.onSave(
+                                ContactEntity(
+                                    name = name,
+                                    number = number.toLong(),
+                                )
                             )
-                        )
-                        findNavController().popBackStack()
-                    } else{
-                        Toast.makeText(requireContext(), "Fill all fields", Toast.LENGTH_SHORT).show()
+
+                            findNavController().popBackStack()
+                        }else{
+                            Snackbar.make(binding.root, "The number is less than 11 digits", Snackbar.LENGTH_SHORT).show()
+                        }
+                    }
+                    else{
+                        Snackbar.make(binding.root, "Fill all fields", Snackbar.LENGTH_SHORT).show()
                     }
                     true
                 }
