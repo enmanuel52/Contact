@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Enmanuel\\Projects\\Contact\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v28\\values-v28.xml",
+            "outputFile": "com.example.contact.app-mergeDebugResources-54:/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrador\\.gradle\\caches\\transforms-3\\79728ca0f0875c35476202962fe2dfe1\\transformed\\appcompat-1.4.1\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\Administrador\\.gradle\\caches\\transforms-3\\829839259aefb6a9d93f3df5ce148da4\\transformed\\appcompat-1.4.1\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",
@@ -16,14 +16,14 @@
                     "to": {
                         "startLines": "14,15,16,20",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "1141,1216,1303,1533",
+                        "startOffsets": "1141,1216,1303,1483",
                         "endLines": "14,15,19,23",
                         "endColumns": "74,86,12,12",
-                        "endOffsets": "1211,1298,1528,1770"
+                        "endOffsets": "1211,1298,1478,1670"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Administrador\\.gradle\\caches\\transforms-3\\8c247f92f8b3f18f379c30554c1dd456\\transformed\\material-1.6.0\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\Administrador\\.gradle\\caches\\transforms-3\\4dbfcd3701857480826a6cdeb9ab7e37\\transformed\\material-1.6.0\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",

@@ -3,7 +3,7 @@
 
     <item android:drawable="?attr/colorPrimary"/>
 
-    <item android:drawable="@drawable/ic_baseline_phone_iphone_24"
-        android:width="180dp" android:height="180dp"
+    <item android:drawable="@drawable/ic_baseline_contacts_24"
+        android:width="300dp" android:height="300dp"
         android:gravity="center"/>
 </layer-list>

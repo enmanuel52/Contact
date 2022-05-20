@@ -14,11 +14,11 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.Contact.MyTheme">
+    <!--<style name="Theme.Contact.MyTheme">
         <item name="colorPrimary">@color/red_500</item>
         <item name="colorPrimaryVariant">@color/red_700</item>
         <item name="colorOnPrimary">@color/white</item>
-    </style>
+    </style>-->
 
     <style name="Theme.Contact.MyTheme2">
     <item name="colorPrimary">@color/light_blue_500</item>
@@ -27,7 +27,7 @@
 
     </style>
 
-    <style name="SplashTheme" parent="Theme.Contact.MyTheme">
+    <style name="SplashTheme" parent="Theme.Contact.MyTheme2">
 
         <item name="android:windowBackground">@drawable/splash_background</item>
     </style>

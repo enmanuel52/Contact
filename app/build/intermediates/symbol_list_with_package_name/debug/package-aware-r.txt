@@ -1327,6 +1327,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color light_blue_200
 color light_blue_500
 color light_blue_700
@@ -2525,6 +2526,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable contact
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2532,7 +2534,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable detete_icon
 drawable edit_icon
-drawable ic_baseline_phone_iphone_24
+drawable ic_baseline_contacts_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background

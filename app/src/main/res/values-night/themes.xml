@@ -14,11 +14,11 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.Contact.MyTheme">
+   <!-- <style name="Theme.Contact.MyTheme">
         <item name="colorPrimary">@color/blue_200</item>
         <item name="colorPrimaryVariant">@color/blue_700</item>
         <item name="colorOnPrimary">@color/black</item>
-    </style>
+    </style>-->
 
     <style name="Theme.Contact.MyTheme2">
         <item name="colorPrimary">@color/deep_orange_500</item>

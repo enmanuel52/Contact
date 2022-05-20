@@ -7,6 +7,7 @@ color blue_700
 color deep_orange_200
 color deep_orange_500
 color deep_orange_700
+color ic_launcher_background
 color light_blue_200
 color light_blue_500
 color light_blue_700
@@ -21,9 +22,10 @@ color teal_700
 color white
 drawable add_icon
 drawable back_icon
+drawable contact
 drawable detete_icon
 drawable edit_icon
-drawable ic_baseline_phone_iphone_24
+drawable ic_baseline_contacts_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable icon_save

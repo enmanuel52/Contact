@@ -1,22 +1,22 @@
 [
     {
-        "merged": "E:\\Enmanuel\\Projects\\Contact\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_add.xml",
-        "source": "E:\\Enmanuel\\Projects\\Contact\\app\\src\\main\\res\\layout\\fragment_add.xml"
+        "merged": "com.example.contact.app-mergeDebugResources-55:/layout/activity_main.xml",
+        "source": "com.example.contact.app-main-58:/layout/activity_main.xml"
     },
     {
-        "merged": "E:\\Enmanuel\\Projects\\Contact\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\recycler_layout.xml",
-        "source": "E:\\Enmanuel\\Projects\\Contact\\app\\src\\main\\res\\layout\\recycler_layout.xml"
+        "merged": "com.example.contact.app-mergeDebugResources-55:/layout/fragment_add.xml",
+        "source": "com.example.contact.app-main-58:/layout/fragment_add.xml"
     },
     {
-        "merged": "E:\\Enmanuel\\Projects\\Contact\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "E:\\Enmanuel\\Projects\\Contact\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "com.example.contact.app-mergeDebugResources-55:/layout/recycler_layout.xml",
+        "source": "com.example.contact.app-main-58:/layout/recycler_layout.xml"
     },
     {
-        "merged": "E:\\Enmanuel\\Projects\\Contact\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_main.xml",
-        "source": "E:\\Enmanuel\\Projects\\Contact\\app\\src\\main\\res\\layout\\fragment_main.xml"
+        "merged": "com.example.contact.app-mergeDebugResources-55:/layout/fragment_details.xml",
+        "source": "com.example.contact.app-main-58:/layout/fragment_details.xml"
     },
     {
-        "merged": "E:\\Enmanuel\\Projects\\Contact\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_details.xml",
-        "source": "E:\\Enmanuel\\Projects\\Contact\\app\\src\\main\\res\\layout\\fragment_details.xml"
+        "merged": "com.example.contact.app-mergeDebugResources-55:/layout/fragment_main.xml",
+        "source": "com.example.contact.app-main-58:/layout/fragment_main.xml"
     }
 ]

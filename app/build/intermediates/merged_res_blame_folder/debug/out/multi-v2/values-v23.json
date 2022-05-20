@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Enmanuel\\Projects\\Contact\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "com.example.contact.app-mergeDebugResources-54:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrador\\.gradle\\caches\\transforms-3\\8c247f92f8b3f18f379c30554c1dd456\\transformed\\material-1.6.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Administrador\\.gradle\\caches\\transforms-3\\4dbfcd3701857480826a6cdeb9ab7e37\\transformed\\material-1.6.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,8,13,17,20,23,26,31,34,38",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -16,14 +16,14 @@
                     "to": {
                         "startLines": "53,56,59,64,68,71,74,77,82,85,89",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3674,3890,4100,4420,4657,4864,5071,5274,5606,5808,6073",
+                        "startOffsets": "3382,3598,3808,4128,4365,4572,4779,4982,5314,5516,5781",
                         "endLines": "55,58,63,67,70,73,76,81,84,88,92",
                         "endColumns": "10,10,10,10,10,10,10,10,10,10,10",
-                        "endOffsets": "3885,4095,4415,4652,4859,5066,5269,5601,5803,6068,6341"
+                        "endOffsets": "3593,3803,4123,4360,4567,4774,4977,5309,5511,5776,6049"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Administrador\\.gradle\\caches\\transforms-3\\79728ca0f0875c35476202962fe2dfe1\\transformed\\appcompat-1.4.1\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Administrador\\.gradle\\caches\\transforms-3\\829839259aefb6a9d93f3df5ce148da4\\transformed\\appcompat-1.4.1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -31,10 +31,18 @@
                         "endLines": "2,3,4,5,19,33,34,35,38,42,43,44,45,49",
                         "endColumns": "134,134,74,86,12,12,118,126,12,12,114,106,112,12",
                         "endOffsets": "185,320,395,482,1366,2262,2381,2508,2730,2954,3069,3176,3289,3519"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,190,325,400,487,1225,1975,2094,2221,2443,2667,2782,2889,3002",
+                        "endLines": "2,3,4,5,19,33,34,35,38,42,43,44,45,49",
+                        "endColumns": "134,134,74,86,12,12,118,126,12,12,114,106,112,12",
+                        "endOffsets": "185,320,395,482,1220,1970,2089,2216,2438,2662,2777,2884,2997,3227"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Administrador\\.gradle\\caches\\transforms-3\\ed226aaed4dbb7c5bcc6d8210a0b6986\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Administrador\\.gradle\\caches\\transforms-3\\79009e5779b4260e8ccf3a23dcb7fab3\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -46,10 +54,10 @@
                     "to": {
                         "startLines": "50",
                         "startColumns": "4",
-                        "startOffsets": "3524",
+                        "startOffsets": "3232",
                         "endLines": "52",
                         "endColumns": "12",
-                        "endOffsets": "3669"
+                        "endOffsets": "3377"
                     }
                 }
             ]
