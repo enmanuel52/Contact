@@ -643,7 +643,7 @@
     <color name="foreground_material_light">@android:color/black</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
-    <color name="ic_launcher_background">#81D4FA</color>
+    <color name="ic_launcher_background">#9EA7AA</color>
     <color name="light_blue_200">#81D4FA</color>
     <color name="light_blue_500">#03A9F4</color>
     <color name="light_blue_700">#0288D1</color>
@@ -806,6 +806,10 @@
     <color name="notification_action_color_filter">#ffffffff</color>
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
     <color name="notification_material_background_media_default_color">#ff424242</color>
+    <color name="primaryColor">#cfd8dc</color>
+    <color name="primaryDarkColor">#9ea7aa</color>
+    <color name="primaryLightColor">#ffffff</color>
+    <color name="primaryTextColor">#000000</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -822,6 +826,10 @@
     <color name="red_700">#d32f2f</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
+    <color name="secondaryColor">#795548</color>
+    <color name="secondaryDarkColor">#4b2c20</color>
+    <color name="secondaryLightColor">#a98274</color>
+    <color name="secondaryTextColor">#ffffff</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
@@ -5257,7 +5265,7 @@
     <style name="ShapeAppearanceOverlay.TopRightDifferentCornerSize">
     <item name="cornerSizeTopRight">20px</item>
   </style>
-    <style name="SplashTheme" parent="Theme.Contact.MyTheme">
+    <style name="SplashTheme" parent="Theme.Contact.MyTheme2">
 
         <item name="android:windowBackground">@drawable/splash_background</item>
     </style>
@@ -5709,15 +5717,11 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         
     </style>
-    <style name="Theme.Contact.MyTheme">
-        <item name="colorPrimary">@color/red_500</item>
-        <item name="colorPrimaryVariant">@color/red_700</item>
-        <item name="colorOnPrimary">@color/white</item>
-    </style>
     <style name="Theme.Contact.MyTheme2">
-    <item name="colorPrimary">@color/light_blue_500</item>
-    <item name="colorPrimaryVariant">@color/light_blue_700</item>
-    <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/white</item>
 
     </style>
     <style name="Theme.Design" parent="Theme.AppCompat">

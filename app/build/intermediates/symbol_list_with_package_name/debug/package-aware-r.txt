@@ -1807,6 +1807,10 @@ color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
+color primaryColor
+color primaryDarkColor
+color primaryLightColor
+color primaryTextColor
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -1824,6 +1828,10 @@ color red_500
 color red_700
 color ripple_material_dark
 color ripple_material_light
+color secondaryColor
+color secondaryDarkColor
+color secondaryLightColor
+color secondaryTextColor
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
@@ -2546,6 +2554,8 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_person_110935
+drawable ic_undraw_social_bio_re_0t9u
 drawable icon_save
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
@@ -4007,7 +4017,6 @@ style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
 style Theme_Contact
-style Theme_Contact_MyTheme
 style Theme_Contact_MyTheme2
 style Theme_Design
 style Theme_Design_BottomSheetDialog
