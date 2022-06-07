@@ -21,9 +21,10 @@
     </style>-->
 
     <style name="Theme.Contact.MyTheme2">
-    <item name="colorPrimary">@color/light_blue_500</item>
-    <item name="colorPrimaryVariant">@color/light_blue_700</item>
-    <item name="colorOnPrimary">@color/white</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/white</item>
 
     </style>
 

@@ -22,4 +22,15 @@
     <color name="deep_orange_500">#FF5722</color>
     <color name="deep_orange_700">#E64A19</color>
 
+    //bluish gray 100
+    <color name="primaryColor">#cfd8dc</color>
+    <color name="primaryLightColor">#ffffff</color>
+    <color name="primaryDarkColor">#9ea7aa</color>
+    //brown 500
+    <color name="secondaryColor">#795548</color>
+    <color name="secondaryLightColor">#a98274</color>
+    <color name="secondaryDarkColor">#4b2c20</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#ffffff</color>
+
 </resources>
