@@ -2679,8 +2679,8 @@ int id action_text 0x7f080047
 int id actions 0x7f080048
 int id activity_chooser_view_content 0x7f080049
 int id add 0x7f08004a
-int id addFragment 0x7f08004b
-int id addIcon 0x7f08004c
+int id addBut 0x7f08004b
+int id addFragment 0x7f08004c
 int id addToolbar 0x7f08004d
 int id alertTitle 0x7f08004e
 int id aligned 0x7f08004f

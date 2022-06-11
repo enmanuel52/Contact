@@ -17,7 +17,7 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object ContactModule {
 
-    private val ContactDatabaseName = "contact_table"
+    private const val ContactDatabaseName = "contact_table"
 
     @Singleton
     @Provides

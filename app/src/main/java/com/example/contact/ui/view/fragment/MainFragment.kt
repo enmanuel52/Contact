@@ -38,8 +38,15 @@ class MainFragment : Fragment(), ClicListenner {
         binding.mainRecycler.adapter = recyclerAdapter
 
         updateRecyclerAdapter()
+        setListenners()
 
         return binding.root
+    }
+
+    private fun setListenners() {
+        binding.addBut.setOnClickListener {
+            findNavController().navigate(MainFragmentDirections.actionMainFragmentToAddFragment())
+        }
     }
 
     private fun updateRecyclerAdapter() {
@@ -69,11 +76,11 @@ class MainFragment : Fragment(), ClicListenner {
         //menu events
         binding.mainToolbar.setOnMenuItemClickListener {
             when(it.itemId){
-                R.id.addIcon -> {
+                /*R.id.addIcon -> {
                     //to add with null
                     findNavController().navigate(MainFragmentDirections.actionMainFragmentToAddFragment())
                     true
-                }
+                }*/
                 R.id.deleteIcon -> {
                     //after
                     true

@@ -45,8 +45,8 @@ drawable splash_background
 id action_detailsFragment_to_addFragment
 id action_mainFragment_to_addFragment
 id action_mainFragment_to_detailsFragment
+id addBut
 id addFragment
-id addIcon
 id addToolbar
 id avatar
 id deleteIcon
