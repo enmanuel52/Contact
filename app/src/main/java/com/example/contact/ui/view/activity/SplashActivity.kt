@@ -12,4 +12,9 @@ class SplashActivity : AppCompatActivity() {
 
         startActivity(Intent(this, MainActivity::class.java))
     }
+
+    override fun onResume() {
+        super.onResume()
+        finish()
+    }
 }

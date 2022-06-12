@@ -39,6 +39,5 @@
         android:layout_marginBottom="8dp"
         android:elevation="4dp"
         android:src="@drawable/add_icon"
-        android:backgroundTint="?attr/colorPrimary"
-        android:foregroundTintMode="?attr/colorPrimary"/>
+        app:backgroundTint="?attr/colorPrimary"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
