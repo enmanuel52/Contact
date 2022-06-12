@@ -2543,6 +2543,7 @@ drawable design_snackbar_background
 drawable detete_icon
 drawable edit_icon
 drawable ic_baseline_contacts_24
+drawable ic_baseline_phonelink_ring_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2712,6 +2713,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id butCall
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3374,6 +3376,7 @@ string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
+string call
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern

@@ -1,10 +1,14 @@
 package com.example.contact.ui.view.fragment
 
+import android.Manifest
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -22,6 +26,16 @@ class DetailsFragment : Fragment() {
 
     private val detailsFragmentViewModel: DetailsFragmentViewModel by viewModels()
 
+    private val responseCallPermission = registerForActivityResult(
+        ActivityResultContracts.RequestPermission()
+    ){
+        call(binding.tvNumber.text.toString())
+    }
+
+    private fun call(no: String) {
+        startActivity(Intent(Intent.ACTION_CALL, Uri.parse("tel:$no")))
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -35,8 +49,15 @@ class DetailsFragment : Fragment() {
         }
 
         detailsFragmentViewModel.onCreate(args.id)
+        setListenners()
 
         return binding.root
+    }
+
+    private fun setListenners() {
+        binding.butCall.setOnClickListener {
+            responseCallPermission.launch(Manifest.permission.CALL_PHONE)
+        }
     }
 
     override fun onResume() {

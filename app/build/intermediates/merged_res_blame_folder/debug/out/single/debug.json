@@ -116,6 +116,10 @@
         "source": "C:\\Users\\enmanuel52\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-58:\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\enmanuel52\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-56:\\drawable_ic_baseline_phonelink_ring_24.xml.flat",
+        "source": "C:\\Users\\enmanuel52\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-58:\\drawable\\ic_baseline_phonelink_ring_24.xml"
+    },
+    {
         "merged": "C:\\Users\\enmanuel52\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-56:\\drawable_back_icon.xml.flat",
         "source": "C:\\Users\\enmanuel52\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-58:\\drawable\\back_icon.xml"
     },

@@ -2542,6 +2542,7 @@ int drawable design_snackbar_background 0x7f070066
 int drawable detete_icon 0x7f070067
 int drawable edit_icon 0x7f070068
 int drawable ic_baseline_contacts_24 0x7f070069
+int drawable ic_baseline_phonelink_ring_24 0x7f0700a8
 int drawable ic_clock_black_24dp 0x7f07006a
 int drawable ic_keyboard_black_24dp 0x7f07006b
 int drawable ic_launcher_background 0x7f07006c
@@ -2711,6 +2712,7 @@ int id bounce 0x7f080067
 int id bounceBoth 0x7f080068
 int id bounceEnd 0x7f080069
 int id bounceStart 0x7f08006a
+int id butCall 0x7f080211
 int id buttonPanel 0x7f08006b
 int id cache_measures 0x7f08006c
 int id callMeasure 0x7f08006d
@@ -3373,6 +3375,7 @@ int string app_name 0x7f11001c
 int string appbar_scrolling_view_behavior 0x7f11001d
 int string bottom_sheet_behavior 0x7f11001e
 int string bottomsheet_action_expand_halfway 0x7f11001f
+int string call 0x7f11008e
 int string character_counter_content_description 0x7f110020
 int string character_counter_overflowed_content_description 0x7f110021
 int string character_counter_pattern 0x7f110022

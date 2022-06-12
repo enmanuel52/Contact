@@ -21,6 +21,11 @@
         <item name="colorPrimary">@color/secondaryColor</item>
         <item name="colorPrimaryVariant">@color/secondaryLightColor</item>
         <item name="colorOnPrimary">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/white</item>
 
+        
+        <item name="navigationIconTint">?attr/colorOnSecondary</item>
+        <item name="itemIconTint">?attr/colorOnSecondary</item>
+        <item name="iconTint">?attr/colorOnSecondary</item>
     </style>
 </resources>

@@ -4,21 +4,25 @@ package com.example.contact.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.contact.R;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class FragmentDetailsBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
+
+  @NonNull
+  public final MaterialButton butCall;
 
   @NonNull
   public final Toolbar detailsToolbar;
@@ -29,9 +33,11 @@ public final class FragmentDetailsBinding implements ViewBinding {
   @NonNull
   public final TextView tvNumber;
 
-  private FragmentDetailsBinding(@NonNull LinearLayout rootView, @NonNull Toolbar detailsToolbar,
-      @NonNull TextView etName, @NonNull TextView tvNumber) {
+  private FragmentDetailsBinding(@NonNull ConstraintLayout rootView,
+      @NonNull MaterialButton butCall, @NonNull Toolbar detailsToolbar, @NonNull TextView etName,
+      @NonNull TextView tvNumber) {
     this.rootView = rootView;
+    this.butCall = butCall;
     this.detailsToolbar = detailsToolbar;
     this.etName = etName;
     this.tvNumber = tvNumber;
@@ -39,7 +45,7 @@ public final class FragmentDetailsBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -64,6 +70,12 @@ public final class FragmentDetailsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.butCall;
+      MaterialButton butCall = ViewBindings.findChildViewById(rootView, id);
+      if (butCall == null) {
+        break missingId;
+      }
+
       id = R.id.detailsToolbar;
       Toolbar detailsToolbar = ViewBindings.findChildViewById(rootView, id);
       if (detailsToolbar == null) {
@@ -82,7 +94,8 @@ public final class FragmentDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentDetailsBinding((LinearLayout) rootView, detailsToolbar, etName, tvNumber);
+      return new FragmentDetailsBinding((ConstraintLayout) rootView, butCall, detailsToolbar,
+          etName, tvNumber);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

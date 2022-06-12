@@ -34,6 +34,7 @@ drawable contact
 drawable detete_icon
 drawable edit_icon
 drawable ic_baseline_contacts_24
+drawable ic_baseline_phonelink_ring_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_person_110935
@@ -49,6 +50,7 @@ id addBut
 id addFragment
 id addToolbar
 id avatar
+id butCall
 id deleteIcon
 id detailsFragment
 id detailsToolbar
@@ -77,6 +79,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
 string app_name
+string call
 string hello_blank_fragment
 string menu_item_add
 string menu_item_delete

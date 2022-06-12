@@ -10,150 +10,154 @@
 9        android:targetSdkVersion="32" />
 9-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml
 10
-11    <!-- Permission will be merged into the manifest of the hosting app. -->
-12    <!-- Is required to launch foreground extraction service for targetSdkVersion 28+. -->
-13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-13-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:13:5-77
-13-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:13:22-74
-14
-15    <application
-15-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:5:5-29:19
-16        android:name="com.example.contact.ui.ContactApp"
-16-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:6:9-38
-17        android:allowBackup="true"
-17-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:7:9-35
-18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.7.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\c9859b840d7beb3c3c17de6d7194e589\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
-19        android:debuggable="true"
-20        android:extractNativeLibs="false"
-21        android:icon="@mipmap/ic_launcher"
-21-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:8:9-43
-22        android:label="@string/app_name"
-22-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:9:9-41
-23        android:roundIcon="@mipmap/ic_launcher_round"
-23-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:10:9-54
-24        android:supportsRtl="true"
-24-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:11:9-35
-25        android:testOnly="true"
-26        android:theme="@style/Theme.Contact.MyTheme2" >
-26-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:12:9-54
-27        <activity
-27-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:13:9-23:20
-28            android:name="com.example.contact.ui.view.activity.SplashActivity"
-28-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:14:13-60
-29            android:exported="true"
-29-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:15:13-36
-30            android:theme="@style/SplashTheme" >
-30-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:16:13-47
-31            <intent-filter>
-31-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:17:13-21:29
-32                <action android:name="android.intent.action.MAIN" />
-32-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:18:17-69
-32-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:18:25-66
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:20:17-77
-34-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:20:27-74
-35            </intent-filter>
-36        </activity>
-37        <activity
-37-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:24:9-28:20
-38            android:name="com.example.contact.ui.view.activity.MainActivity"
-38-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:25:13-58
-39            android:exported="true" >
-39-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:26:13-36
-40        </activity>
-41
-42        <uses-library
-42-->[androidx.window:window:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\feed9c517f99bcf7801f35a056b59d7f\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-43            android:name="androidx.window.extensions"
-43-->[androidx.window:window:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\feed9c517f99bcf7801f35a056b59d7f\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-44            android:required="false" />
-44-->[androidx.window:window:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\feed9c517f99bcf7801f35a056b59d7f\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-45        <uses-library
-45-->[androidx.window:window:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\feed9c517f99bcf7801f35a056b59d7f\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-46            android:name="androidx.window.sidecar"
-46-->[androidx.window:window:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\feed9c517f99bcf7801f35a056b59d7f\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-47            android:required="false" />
-47-->[androidx.window:window:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\feed9c517f99bcf7801f35a056b59d7f\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-48
-49        <provider
-49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\dcfb7a1866e91e7aefaa9a9d5a77b0d9\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-50            android:name="androidx.startup.InitializationProvider"
-50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\dcfb7a1866e91e7aefaa9a9d5a77b0d9\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-51            android:authorities="com.example.contact.androidx-startup"
-51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\dcfb7a1866e91e7aefaa9a9d5a77b0d9\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-52            android:exported="false" >
-52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\dcfb7a1866e91e7aefaa9a9d5a77b0d9\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-53            <meta-data
-53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\dcfb7a1866e91e7aefaa9a9d5a77b0d9\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-54                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\dcfb7a1866e91e7aefaa9a9d5a77b0d9\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-55                android:value="androidx.startup" />
-55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\dcfb7a1866e91e7aefaa9a9d5a77b0d9\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-56            <meta-data
-56-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\eecdd12a34265c233424ee4b750c6695\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-57                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-57-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\eecdd12a34265c233424ee4b750c6695\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-58                android:value="androidx.startup" />
-58-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\eecdd12a34265c233424ee4b750c6695\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-59        </provider>
-60
-61        <service
-61-->[androidx.room:room-runtime:2.4.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\cb503a571c223dc92e6dc77f4ca8c35e\transformed\room-runtime-2.4.2\AndroidManifest.xml:25:9-28:40
-62            android:name="androidx.room.MultiInstanceInvalidationService"
-62-->[androidx.room:room-runtime:2.4.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\cb503a571c223dc92e6dc77f4ca8c35e\transformed\room-runtime-2.4.2\AndroidManifest.xml:26:13-74
-63            android:directBootAware="true"
-63-->[androidx.room:room-runtime:2.4.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\cb503a571c223dc92e6dc77f4ca8c35e\transformed\room-runtime-2.4.2\AndroidManifest.xml:27:13-43
-64            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
-64-->[androidx.room:room-runtime:2.4.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\cb503a571c223dc92e6dc77f4ca8c35e\transformed\room-runtime-2.4.2\AndroidManifest.xml:28:13-37
-65        <activity
-65-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:18:9-24:45
-66            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
-66-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:19:13-100
-67            android:enabled="false"
-67-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:20:13-36
-68            android:exported="false"
-68-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:21:13-37
-69            android:launchMode="singleInstance"
-69-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:22:13-48
-70            android:process=":playcore_missing_splits_activity"
-70-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:23:13-64
-71            android:stateNotNeeded="true" />
-71-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:24:13-42
-72        <activity
-72-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:25:9-29:65
-73            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
-73-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:26:13-93
-74            android:exported="false"
-74-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:27:13-37
-75            android:stateNotNeeded="true"
-75-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:28:13-42
-76            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
-76-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:29:13-62
-77        <service
-77-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:32:9-39:19
-78            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
-78-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:33:13-94
-79            android:enabled="false"
-79-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:34:13-36
-80            android:exported="true" >
-80-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:35:13-36
-81            <meta-data
-81-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:36:13-38:41
-82                android:name="com.google.android.play.core.assetpacks.versionCode"
-82-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:37:17-83
-83                android:value="11002" />
-83-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:38:17-38
-84        </service>
-85        <service
-85-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:40:9-43:40
-86            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
-86-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:41:13-95
-87            android:enabled="false"
-87-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:42:13-36
-88            android:exported="false" />
-88-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:43:13-37
-89    </application>
-90
-91</manifest>
+11    <uses-permission android:name="android.permission.CALL_PHONE" />
+11-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:5:5-68
+11-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:5:22-66
+12
+13    <!-- Permission will be merged into the manifest of the hosting app. -->
+14    <!-- Is required to launch foreground extraction service for targetSdkVersion 28+. -->
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+15-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:13:5-77
+15-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:13:22-74
+16
+17    <application
+17-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:7:5-31:19
+18        android:name="com.example.contact.ui.ContactApp"
+18-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:8:9-38
+19        android:allowBackup="true"
+19-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:9:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.7.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\c9859b840d7beb3c3c17de6d7194e589\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:icon="@mipmap/ic_launcher"
+23-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:10:9-43
+24        android:label="@string/app_name"
+24-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:11:9-41
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:12:9-54
+26        android:supportsRtl="true"
+26-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:13:9-35
+27        android:testOnly="true"
+28        android:theme="@style/Theme.Contact.MyTheme2" >
+28-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:14:9-54
+29        <activity
+29-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:15:9-25:20
+30            android:name="com.example.contact.ui.view.activity.SplashActivity"
+30-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:16:13-60
+31            android:exported="true"
+31-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:17:13-36
+32            android:theme="@style/SplashTheme" >
+32-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:18:13-47
+33            <intent-filter>
+33-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:19:13-23:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:20:17-69
+34-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:20:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:22:17-77
+36-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:22:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:26:9-30:20
+40            android:name="com.example.contact.ui.view.activity.MainActivity"
+40-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:27:13-58
+41            android:exported="true" >
+41-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:28:13-36
+42        </activity>
+43
+44        <uses-library
+44-->[androidx.window:window:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\feed9c517f99bcf7801f35a056b59d7f\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+45            android:name="androidx.window.extensions"
+45-->[androidx.window:window:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\feed9c517f99bcf7801f35a056b59d7f\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+46            android:required="false" />
+46-->[androidx.window:window:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\feed9c517f99bcf7801f35a056b59d7f\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+47        <uses-library
+47-->[androidx.window:window:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\feed9c517f99bcf7801f35a056b59d7f\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+48            android:name="androidx.window.sidecar"
+48-->[androidx.window:window:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\feed9c517f99bcf7801f35a056b59d7f\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+49            android:required="false" />
+49-->[androidx.window:window:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\feed9c517f99bcf7801f35a056b59d7f\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+50
+51        <provider
+51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\dcfb7a1866e91e7aefaa9a9d5a77b0d9\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+52            android:name="androidx.startup.InitializationProvider"
+52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\dcfb7a1866e91e7aefaa9a9d5a77b0d9\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+53            android:authorities="com.example.contact.androidx-startup"
+53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\dcfb7a1866e91e7aefaa9a9d5a77b0d9\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+54            android:exported="false" >
+54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\dcfb7a1866e91e7aefaa9a9d5a77b0d9\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+55            <meta-data
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\dcfb7a1866e91e7aefaa9a9d5a77b0d9\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+56                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\dcfb7a1866e91e7aefaa9a9d5a77b0d9\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+57                android:value="androidx.startup" />
+57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\dcfb7a1866e91e7aefaa9a9d5a77b0d9\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+58            <meta-data
+58-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\eecdd12a34265c233424ee4b750c6695\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+59                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+59-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\eecdd12a34265c233424ee4b750c6695\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+60                android:value="androidx.startup" />
+60-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\eecdd12a34265c233424ee4b750c6695\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+61        </provider>
+62
+63        <service
+63-->[androidx.room:room-runtime:2.4.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\cb503a571c223dc92e6dc77f4ca8c35e\transformed\room-runtime-2.4.2\AndroidManifest.xml:25:9-28:40
+64            android:name="androidx.room.MultiInstanceInvalidationService"
+64-->[androidx.room:room-runtime:2.4.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\cb503a571c223dc92e6dc77f4ca8c35e\transformed\room-runtime-2.4.2\AndroidManifest.xml:26:13-74
+65            android:directBootAware="true"
+65-->[androidx.room:room-runtime:2.4.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\cb503a571c223dc92e6dc77f4ca8c35e\transformed\room-runtime-2.4.2\AndroidManifest.xml:27:13-43
+66            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+66-->[androidx.room:room-runtime:2.4.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\cb503a571c223dc92e6dc77f4ca8c35e\transformed\room-runtime-2.4.2\AndroidManifest.xml:28:13-37
+67        <activity
+67-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:18:9-24:45
+68            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+68-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:19:13-100
+69            android:enabled="false"
+69-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:20:13-36
+70            android:exported="false"
+70-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:21:13-37
+71            android:launchMode="singleInstance"
+71-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:22:13-48
+72            android:process=":playcore_missing_splits_activity"
+72-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:23:13-64
+73            android:stateNotNeeded="true" />
+73-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:24:13-42
+74        <activity
+74-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:25:9-29:65
+75            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+75-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:26:13-93
+76            android:exported="false"
+76-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:27:13-37
+77            android:stateNotNeeded="true"
+77-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:28:13-42
+78            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
+78-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:29:13-62
+79        <service
+79-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:32:9-39:19
+80            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+80-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:33:13-94
+81            android:enabled="false"
+81-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:34:13-36
+82            android:exported="true" >
+82-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:35:13-36
+83            <meta-data
+83-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:36:13-38:41
+84                android:name="com.google.android.play.core.assetpacks.versionCode"
+84-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:37:17-83
+85                android:value="11002" />
+85-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:38:17-38
+86        </service>
+87        <service
+87-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:40:9-43:40
+88            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
+88-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:41:13-95
+89            android:enabled="false"
+89-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:42:13-36
+90            android:exported="false" />
+90-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:43:13-37
+91    </application>
+92
+93</manifest>

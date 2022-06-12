@@ -29,6 +29,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Contact</string>
+    <string name="call">Call</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="menu_item_add">Add</string>
     <string name="menu_item_delete">Delete</string>
@@ -62,6 +63,10 @@
         <item name="colorPrimary">@color/primaryColor</item>
         <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
         <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
 
+        
+        <item name="navigationIconTint">?attr/colorOnSecondary</item>
+        <item name="iconTint">?attr/colorOnSecondary</item>
     </style>
 </resources>
