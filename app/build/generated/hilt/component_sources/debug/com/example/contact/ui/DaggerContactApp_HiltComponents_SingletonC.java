@@ -19,6 +19,7 @@ import com.example.contact.domain.usecase.DeleteContactUseCase;
 import com.example.contact.domain.usecase.InsertContactUseCase;
 import com.example.contact.domain.usecase.LoadAllContactsUseCase;
 import com.example.contact.domain.usecase.LoadContactUseCase;
+import com.example.contact.domain.usecase.SearchByNameUseCase;
 import com.example.contact.domain.usecase.UpdateContactUseCase;
 import com.example.contact.ui.view.activity.MainActivity;
 import com.example.contact.ui.view.fragment.AddFragment;
@@ -499,6 +500,10 @@ public final class DaggerContactApp_HiltComponents_SingletonC extends ContactApp
       return new LoadAllContactsUseCase(singletonC.repository());
     }
 
+    private SearchByNameUseCase searchByNameUseCase() {
+      return new SearchByNameUseCase(singletonC.repository());
+    }
+
     @SuppressWarnings("unchecked")
     private void initialize(final SavedStateHandle savedStateHandleParam) {
       this.addFragmentViewModelProvider = new SwitchingProvider<>(singletonC, activityRetainedCImpl, viewModelCImpl, 0);
@@ -539,7 +544,7 @@ public final class DaggerContactApp_HiltComponents_SingletonC extends ContactApp
           return (T) new DetailsFragmentViewModel(viewModelCImpl.loadContactUseCase(), viewModelCImpl.deleteContactUseCase());
 
           case 2: // com.example.contact.ui.viewmodel.fragment.MainFragmentViewModel 
-          return (T) new MainFragmentViewModel(viewModelCImpl.loadAllContactsUseCase());
+          return (T) new MainFragmentViewModel(viewModelCImpl.loadAllContactsUseCase(), viewModelCImpl.searchByNameUseCase());
 
           default: throw new AssertionError(id);
         }

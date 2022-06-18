@@ -29,5 +29,7 @@ class ContactRepository @Inject constructor(
 
     override fun getContact(id: Int): ContactEntity = contactDao.getContact(id)
 
+    override fun searchByName(name: String): List<ContactEntity> = contactDao.searchByName(name)
+
     suspend fun deleteContactByName(id: Int) = contactDao.deleteContactByName(id)
 }

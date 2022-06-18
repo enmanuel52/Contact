@@ -26,4 +26,7 @@ interface ContactDao {
 
     @Query("DELETE FROM contact_table WHERE id = :id")
     suspend fun deleteContactByName(id: Int)
+
+    @Query("SELECT * FROM contact_table WHERE name LIKE '%' || :name || '%' ORDER BY name ASC")
+    fun searchByName(name: String): List<ContactEntity>
 }

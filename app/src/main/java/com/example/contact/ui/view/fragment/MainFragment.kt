@@ -1,9 +1,16 @@
 package com.example.contact.ui.view.fragment
 
+import android.app.SearchManager
+import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.*
+import androidx.appcompat.widget.SearchView
+import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.flowWithLifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -14,6 +21,7 @@ import com.example.contact.ui.adapter.RecyclerAdapter
 import com.example.contact.ui.viewmodel.fragment.MainFragmentViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
@@ -50,17 +58,15 @@ class MainFragment : Fragment(), ClicListenner {
     }
 
     private fun updateRecyclerAdapter() {
-        lifecycleScope.launch{
-            mainFragmentViewModel.updateView()
-            mainFragmentViewModel.contactList.collect {
-                recyclerAdapter.items = it
-            }
-        }
-    }
+        mainFragmentViewModel.getAllContacts()
 
-    override fun onResume() {
-        super.onResume()
-        updateRecyclerAdapter()
+        viewLifecycleOwner.lifecycleScope.launch {
+            mainFragmentViewModel.contactList.flowWithLifecycle(lifecycle, Lifecycle.State.STARTED)
+                .collectLatest {
+                    recyclerAdapter.items = it
+                    recyclerAdapter.notifyDataSetChanged()
+                }
+        }
     }
 
     override fun clic(id: Int) { //send the info
@@ -73,14 +79,43 @@ class MainFragment : Fragment(), ClicListenner {
 
         //menu inflate
         binding.mainToolbar.inflateMenu(R.menu.fragment_main_toolbar)
+
+        //set the searchView
+        val searchManager = requireActivity().getSystemService(Context.SEARCH_SERVICE) as SearchManager
+        (binding.mainToolbar.menu.findItem(R.id.searchIcon).actionView as SearchView).apply {
+            // Assumes current activity is the searchable activity
+            setSearchableInfo(searchManager.getSearchableInfo(requireActivity().componentName))
+
+
+            setOnQueryTextListener(object: SearchView.OnQueryTextListener{
+                override fun onQueryTextSubmit(query: String?): Boolean {
+                    return true
+                }
+
+                override fun onQueryTextChange(newText: String?): Boolean {
+                    //search contacts
+                    if(newText != null) {
+                        mainFragmentViewModel.searchContactByName(name = newText)
+                    }
+                    else
+                        mainFragmentViewModel.getAllContacts()
+
+                    return true
+                }
+
+            })
+
+            setOnQueryTextFocusChangeListener { _, b ->
+                if(!b){
+                    //show all contacts
+                    mainFragmentViewModel.getAllContacts()
+                }
+            }
+        }
+
         //menu events
         binding.mainToolbar.setOnMenuItemClickListener {
             when(it.itemId){
-                /*R.id.addIcon -> {
-                    //to add with null
-                    findNavController().navigate(MainFragmentDirections.actionMainFragmentToAddFragment())
-                    true
-                }*/
                 R.id.deleteIcon -> {
                     //after
                     true

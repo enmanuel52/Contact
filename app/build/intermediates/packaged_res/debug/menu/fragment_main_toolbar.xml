@@ -9,6 +9,13 @@
         android:icon="@drawable/add_icon"/>-->
 
     <item
+        android:id="@+id/searchIcon"
+        android:title="@string/search"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+    <item
         android:id="@+id/deleteIcon"
         android:title="@string/menu_item_delete"
         app:showAsAction="ifRoom"

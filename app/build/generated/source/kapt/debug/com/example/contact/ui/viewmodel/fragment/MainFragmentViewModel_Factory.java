@@ -2,6 +2,7 @@
 package com.example.contact.ui.viewmodel.fragment;
 
 import com.example.contact.domain.usecase.LoadAllContactsUseCase;
+import com.example.contact.domain.usecase.SearchByNameUseCase;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
 import javax.inject.Provider;
@@ -14,22 +15,28 @@ import javax.inject.Provider;
 public final class MainFragmentViewModel_Factory implements Factory<MainFragmentViewModel> {
   private final Provider<LoadAllContactsUseCase> loadAllContactsUseCaseProvider;
 
+  private final Provider<SearchByNameUseCase> searchByNameUseCaseProvider;
+
   public MainFragmentViewModel_Factory(
-      Provider<LoadAllContactsUseCase> loadAllContactsUseCaseProvider) {
+      Provider<LoadAllContactsUseCase> loadAllContactsUseCaseProvider,
+      Provider<SearchByNameUseCase> searchByNameUseCaseProvider) {
     this.loadAllContactsUseCaseProvider = loadAllContactsUseCaseProvider;
+    this.searchByNameUseCaseProvider = searchByNameUseCaseProvider;
   }
 
   @Override
   public MainFragmentViewModel get() {
-    return newInstance(loadAllContactsUseCaseProvider.get());
+    return newInstance(loadAllContactsUseCaseProvider.get(), searchByNameUseCaseProvider.get());
   }
 
   public static MainFragmentViewModel_Factory create(
-      Provider<LoadAllContactsUseCase> loadAllContactsUseCaseProvider) {
-    return new MainFragmentViewModel_Factory(loadAllContactsUseCaseProvider);
+      Provider<LoadAllContactsUseCase> loadAllContactsUseCaseProvider,
+      Provider<SearchByNameUseCase> searchByNameUseCaseProvider) {
+    return new MainFragmentViewModel_Factory(loadAllContactsUseCaseProvider, searchByNameUseCaseProvider);
   }
 
-  public static MainFragmentViewModel newInstance(LoadAllContactsUseCase loadAllContactsUseCase) {
-    return new MainFragmentViewModel(loadAllContactsUseCase);
+  public static MainFragmentViewModel newInstance(LoadAllContactsUseCase loadAllContactsUseCase,
+      SearchByNameUseCase searchByNameUseCase) {
+    return new MainFragmentViewModel(loadAllContactsUseCase, searchByNameUseCase);
   }
 }

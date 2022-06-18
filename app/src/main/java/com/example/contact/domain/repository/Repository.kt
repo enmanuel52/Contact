@@ -15,4 +15,6 @@ interface Repository {
     suspend fun deleteContact(contactEntity: ContactEntity)
 
     fun getContact(id: Int): ContactEntity
+
+    fun searchByName(name: String): List<ContactEntity>
 }

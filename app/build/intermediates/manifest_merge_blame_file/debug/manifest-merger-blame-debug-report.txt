@@ -21,7 +21,7 @@
 15-->[com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:13:22-74
 16
 17    <application
-17-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:7:5-31:19
+17-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:7:5-30:19
 18        android:name="com.example.contact.ui.ContactApp"
 18-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:8:9-38
 19        android:allowBackup="true"
@@ -61,7 +61,7 @@
 37            </intent-filter>
 38        </activity>
 39        <activity
-39-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:26:9-30:20
+39-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:26:9-29:20
 40            android:name="com.example.contact.ui.view.activity.MainActivity"
 40-->D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:27:13-58
 41            android:exported="true" >

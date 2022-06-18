@@ -2544,6 +2544,7 @@ drawable detete_icon
 drawable edit_icon
 drawable ic_baseline_contacts_24
 drawable ic_baseline_phonelink_ring_24
+drawable ic_baseline_search_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -3007,6 +3008,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id searchIcon
 id search_badge
 id search_bar
 id search_button
@@ -3479,6 +3481,7 @@ string path_password_strike_through
 string progress
 string retry
 string scrollable
+string search
 string search_menu_title
 string status_bar_notification_info_overflow
 string tAdd
@@ -4719,6 +4722,7 @@ styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
+xml searchable
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

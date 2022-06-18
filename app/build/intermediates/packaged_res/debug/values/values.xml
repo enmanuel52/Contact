@@ -35,6 +35,7 @@
     <string name="menu_item_delete">Delete</string>
     <string name="menu_item_save">Save</string>
     <string name="scrollable">Scroll</string>
+    <string name="search">Search</string>
     <string name="tAdd">Add/ Edit</string>
     <string name="tDetails">Details</string>
     <string name="tv_email">Email</string>

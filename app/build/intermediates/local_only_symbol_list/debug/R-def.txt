@@ -35,6 +35,7 @@ drawable detete_icon
 drawable edit_icon
 drawable ic_baseline_contacts_24
 drawable ic_baseline_phonelink_ring_24
+drawable ic_baseline_search_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_person_110935
@@ -64,6 +65,7 @@ id mainRecycler
 id mainToolbar
 id nav_graph
 id saveIcon
+id searchIcon
 id tvLetter
 id tvName
 id tvNumber
@@ -85,6 +87,7 @@ string menu_item_add
 string menu_item_delete
 string menu_item_save
 string scrollable
+string search
 string tAdd
 string tDetails
 string tv_email
@@ -94,3 +97,4 @@ string update
 style SplashTheme
 style Theme.Contact
 style Theme.Contact.MyTheme2
+xml searchable

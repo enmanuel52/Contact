@@ -236,6 +236,45 @@ public final class ContactDao_Impl implements ContactDao {
     }
   }
 
+  @Override
+  public List<ContactEntity> searchByName(final String name) {
+    final String _sql = "SELECT * FROM contact_table WHERE name LIKE '%' || ? || '%' ORDER BY name ASC";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    if (name == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, name);
+    }
+    __db.assertNotSuspendingTransaction();
+    final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+    try {
+      final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+      final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
+      final int _cursorIndexOfNumber = CursorUtil.getColumnIndexOrThrow(_cursor, "number");
+      final List<ContactEntity> _result = new ArrayList<ContactEntity>(_cursor.getCount());
+      while(_cursor.moveToNext()) {
+        final ContactEntity _item;
+        final int _tmpId;
+        _tmpId = _cursor.getInt(_cursorIndexOfId);
+        final String _tmpName;
+        if (_cursor.isNull(_cursorIndexOfName)) {
+          _tmpName = null;
+        } else {
+          _tmpName = _cursor.getString(_cursorIndexOfName);
+        }
+        final long _tmpNumber;
+        _tmpNumber = _cursor.getLong(_cursorIndexOfNumber);
+        _item = new ContactEntity(_tmpId,_tmpName,_tmpNumber);
+        _result.add(_item);
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
   public static List<Class<?>> getRequiredConverters() {
     return Collections.emptyList();
   }

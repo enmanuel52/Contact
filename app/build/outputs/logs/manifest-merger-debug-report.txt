@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-32:12
 MERGED from [androidx.databinding:viewbinding:7.2.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\646fe77eb7e07a9b194ff7cc4170ec6a\transformed\viewbinding-7.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.room:room-ktx:2.4.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1f5625b717f09ad5cbce5a3fdae04307\transformed\room-ktx-2.4.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\24328ed936db7ba82c596222a0221149\transformed\navigation-fragment-ktx-2.4.2\AndroidManifest.xml:17:1-24:12
@@ -78,20 +78,20 @@ MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\enmanuel52\.gradle\caches\
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\4646183315f9bd21cce76136acb358b5\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.dagger:dagger-lint-aar:2.40.5] C:\Users\enmanuel52\.gradle\caches\transforms-3\080def541c21ca4dc1160eda6c75f773\transformed\dagger-lint-aar-2.40.5\AndroidManifest.xml:16:1-19:12
 MERGED from [com.google.android.play:core:1.10.2] C:\Users\enmanuel52\.gradle\caches\transforms-3\1a5d441fbf82cdbbef8a8fe757315f8d\transformed\core-1.10.2\AndroidManifest.xml:2:1-46:12
-INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-32:12
 	package
 		ADDED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml
-		ADDED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-33:12
+		ADDED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml
-		ADDED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-33:12
+		ADDED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:2:11-69
@@ -100,7 +100,7 @@ ADDED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Conta
 	android:name
 		ADDED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:5:22-66
 application
-ADDED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:7:5-31:19
+ADDED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:7:5-30:19
 MERGED from [androidx.window:window:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\feed9c517f99bcf7801f35a056b59d7f\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\feed9c517f99bcf7801f35a056b59d7f\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.android.material:material:1.6.0] C:\Users\enmanuel52\.gradle\caches\transforms-3\4dbfcd3701857480826a6cdeb9ab7e37\transformed\material-1.6.0\AndroidManifest.xml:24:5-20
@@ -158,7 +158,7 @@ ADDED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Conta
 	android:name
 		ADDED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:22:27-74
 activity#com.example.contact.ui.view.activity.MainActivity
-ADDED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:26:9-30:20
+ADDED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:26:9-29:20
 	android:exported
 		ADDED from D:\Estudios\Programacion\Desarrollo movil\AndroidStudioProjects\Contact\app\src\main\AndroidManifest.xml:28:13-36
 	android:name
