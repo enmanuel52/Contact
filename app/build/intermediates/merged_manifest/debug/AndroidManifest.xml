@@ -59,6 +59,10 @@
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
         </provider>
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.contact.com.squareup.picasso"
+            android:exported="false" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"
