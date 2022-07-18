@@ -95,6 +95,7 @@ menu fragment_main_toolbar
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
+string action_cancel
 string app_name
 string call
 string hello_blank_fragment
@@ -107,6 +108,8 @@ string scrollable
 string search
 string tAdd
 string tDetails
+string title_camera
+string title_gallery
 string tv_email
 string tv_recycler_name
 string tv_recycler_number

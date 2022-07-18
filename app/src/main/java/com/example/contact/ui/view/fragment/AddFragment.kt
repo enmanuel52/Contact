@@ -121,7 +121,6 @@ class AddFragment : Fragment() {
                         if (number.length <= 10) {
                             addFragmentViewModel.onSave(
                                 ContactEntity(
-                                    id= args.id,
                                     name = name,
                                     number = number.toLong(),
                                     urlPicture = url,

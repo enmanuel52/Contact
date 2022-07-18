@@ -31,6 +31,7 @@
     <color name="ucrop_color_toolbar">@color/secondaryColor</color>
     <color name="ucrop_color_widget_active">@color/secondaryDarkColor</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="action_cancel">Cancel</string>
     <string name="app_name">Contact</string>
     <string name="call">Call</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -43,6 +44,8 @@
     <string name="search">Search</string>
     <string name="tAdd">Add/ Edit</string>
     <string name="tDetails">Details</string>
+    <string name="title_camera">Camera</string>
+    <string name="title_gallery">Gallery</string>
     <string name="tv_email">Email</string>
     <string name="tv_recycler_name">Name*</string>
     <string name="tv_recycler_number">Phone Number*</string>

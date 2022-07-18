@@ -15,4 +15,7 @@
     <string name="search">Search</string>
     <string name="perfil">Perfil</string>
     <string name="remove">Remove Photo</string>
+    <string name="title_camera">Camera</string>
+    <string name="title_gallery">Gallery</string>
+    <string name="action_cancel">Cancel</string>
 </resources>

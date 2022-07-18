@@ -92,5 +92,5 @@ dependencies {
     //Picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
     //ucrop
-    implementation 'com.github.yalantis:ucrop:2.2.6'
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
 }

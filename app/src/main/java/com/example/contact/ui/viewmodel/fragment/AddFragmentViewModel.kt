@@ -17,7 +17,7 @@ class AddFragmentViewModel @Inject constructor(
     private val insertContactUseCase: InsertContactUseCase,
     private val updateContactUseCase: UpdateContactUseCase
 ) : ViewModel() {
-    val contact = MutableLiveData<ContactEntity?>()
+    val contact = MutableLiveData<ContactEntity?>(null)
 
     fun onCreate(id: Int) {
         if (id != -1) {
@@ -29,10 +29,17 @@ class AddFragmentViewModel @Inject constructor(
 
     fun onSave(contactEntity: ContactEntity) {
         viewModelScope.launch {
-            if (contactEntity.id == -1)
+            if (contact.value == null)
                 insertContactUseCase(contactEntity)
             else
-                updateContactUseCase(contactEntity)
+                updateContactUseCase(
+                    ContactEntity(
+                        id = contact.value?.id!!,
+                        name = contactEntity.name,
+                        number = contactEntity.number,
+                        urlPicture = contactEntity.urlPicture
+                    )
+                )
         }
     }
 }
