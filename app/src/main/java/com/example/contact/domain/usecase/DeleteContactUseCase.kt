@@ -7,6 +7,6 @@ class DeleteContactUseCase @Inject constructor(
     private val repository: ContactRepository,
 ){
     suspend operator fun invoke(id: Int){
-        repository.deleteContactByName(id)
+        repository.deleteContactById(id)
     }
 }

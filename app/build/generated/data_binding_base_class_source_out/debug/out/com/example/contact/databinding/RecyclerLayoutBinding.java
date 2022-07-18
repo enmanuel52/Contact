@@ -4,42 +4,38 @@ package com.example.contact.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.contact.R;
-import com.google.android.material.card.MaterialCardView;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class RecyclerLayoutBinding implements ViewBinding {
   @NonNull
-  private final MaterialCardView rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final FrameLayout avatar;
-
-  @NonNull
-  public final TextView tvLetter;
+  public final CircleImageView avatar;
 
   @NonNull
   public final TextView tvName;
 
-  private RecyclerLayoutBinding(@NonNull MaterialCardView rootView, @NonNull FrameLayout avatar,
-      @NonNull TextView tvLetter, @NonNull TextView tvName) {
+  private RecyclerLayoutBinding(@NonNull ConstraintLayout rootView, @NonNull CircleImageView avatar,
+      @NonNull TextView tvName) {
     this.rootView = rootView;
     this.avatar = avatar;
-    this.tvLetter = tvLetter;
     this.tvName = tvName;
   }
 
   @Override
   @NonNull
-  public MaterialCardView getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -65,14 +61,8 @@ public final class RecyclerLayoutBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.avatar;
-      FrameLayout avatar = ViewBindings.findChildViewById(rootView, id);
+      CircleImageView avatar = ViewBindings.findChildViewById(rootView, id);
       if (avatar == null) {
-        break missingId;
-      }
-
-      id = R.id.tvLetter;
-      TextView tvLetter = ViewBindings.findChildViewById(rootView, id);
-      if (tvLetter == null) {
         break missingId;
       }
 
@@ -82,7 +72,7 @@ public final class RecyclerLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RecyclerLayoutBinding((MaterialCardView) rootView, avatar, tvLetter, tvName);
+      return new RecyclerLayoutBinding((ConstraintLayout) rootView, avatar, tvName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

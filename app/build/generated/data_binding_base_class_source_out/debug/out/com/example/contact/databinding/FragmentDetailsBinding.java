@@ -13,6 +13,7 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.contact.R;
 import com.google.android.material.button.MaterialButton;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -20,6 +21,9 @@ import java.lang.String;
 public final class FragmentDetailsBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final CircleImageView avatar;
 
   @NonNull
   public final MaterialButton butCall;
@@ -34,9 +38,10 @@ public final class FragmentDetailsBinding implements ViewBinding {
   public final TextView tvNumber;
 
   private FragmentDetailsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull MaterialButton butCall, @NonNull Toolbar detailsToolbar, @NonNull TextView etName,
-      @NonNull TextView tvNumber) {
+      @NonNull CircleImageView avatar, @NonNull MaterialButton butCall,
+      @NonNull Toolbar detailsToolbar, @NonNull TextView etName, @NonNull TextView tvNumber) {
     this.rootView = rootView;
+    this.avatar = avatar;
     this.butCall = butCall;
     this.detailsToolbar = detailsToolbar;
     this.etName = etName;
@@ -70,6 +75,12 @@ public final class FragmentDetailsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.avatar;
+      CircleImageView avatar = ViewBindings.findChildViewById(rootView, id);
+      if (avatar == null) {
+        break missingId;
+      }
+
       id = R.id.butCall;
       MaterialButton butCall = ViewBindings.findChildViewById(rootView, id);
       if (butCall == null) {
@@ -94,8 +105,8 @@ public final class FragmentDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentDetailsBinding((ConstraintLayout) rootView, butCall, detailsToolbar,
-          etName, tvNumber);
+      return new FragmentDetailsBinding((ConstraintLayout) rootView, avatar, butCall,
+          detailsToolbar, etName, tvNumber);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

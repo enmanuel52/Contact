@@ -29,16 +29,10 @@ class AddFragmentViewModel @Inject constructor(
 
     fun onSave(contactEntity: ContactEntity) {
         viewModelScope.launch {
-            if (contact.value == null)
+            if (contactEntity.id == -1)
                 insertContactUseCase(contactEntity)
             else
-                updateContactUseCase(
-                    ContactEntity(
-                        contact.value!!.id,
-                        contactEntity.name,
-                        contactEntity.number
-                    )
-                )
+                updateContactUseCase(contactEntity)
         }
     }
 }
