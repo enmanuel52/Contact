@@ -1,22 +1,34 @@
 [
     {
-        "merged": "com.example.contact.app-mergeDebugResources-56:/layout/activity_main.xml",
-        "source": "com.example.contact.app-main-59:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-mergeDebugResources-57:\\layout\\fragment_main.xml",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\layout\\fragment_main.xml"
     },
     {
-        "merged": "com.example.contact.app-mergeDebugResources-56:/layout/fragment_add.xml",
-        "source": "com.example.contact.app-main-59:/layout/fragment_add.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-mergeDebugResources-57:\\layout\\fragment_details.xml",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\layout\\fragment_details.xml"
     },
     {
-        "merged": "com.example.contact.app-mergeDebugResources-56:/layout/fragment_details.xml",
-        "source": "com.example.contact.app-main-59:/layout/fragment_details.xml"
+        "merged": "com.example.contact.app-mergeDebugResources-57:/layout/fragment_add.xml",
+        "source": "com.example.contact.app-main-60:/layout/fragment_add.xml"
     },
     {
-        "merged": "com.example.contact.app-mergeDebugResources-56:/layout/recycler_layout.xml",
-        "source": "com.example.contact.app-main-59:/layout/recycler_layout.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-mergeDebugResources-57:\\layout\\fragment_add.xml",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\layout\\fragment_add.xml"
     },
     {
-        "merged": "com.example.contact.app-mergeDebugResources-56:/layout/fragment_main.xml",
-        "source": "com.example.contact.app-main-59:/layout/fragment_main.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-mergeDebugResources-57:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-mergeDebugResources-57:\\layout\\recycler_layout.xml",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\layout\\recycler_layout.xml"
+    },
+    {
+        "merged": "com.example.contact.app-mergeDebugResources-57:/layout/fragment_details.xml",
+        "source": "com.example.contact.app-main-60:/layout/fragment_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-mergeDebugResources-57:\\layout\\layut_input_modal.xml",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\layout\\layut_input_modal.xml"
     }
 ]

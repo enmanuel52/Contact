@@ -1,10 +1,7 @@
 package com.example.contact.data.database.dao
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.room.*
 import com.example.contact.data.database.entities.ContactEntity
-import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface ContactDao {
@@ -25,7 +22,7 @@ interface ContactDao {
     suspend fun deleteContact(contactEntity: ContactEntity)
 
     @Query("DELETE FROM contact_table WHERE id = :id")
-    suspend fun deleteContactByName(id: Int)
+    suspend fun deleteContactById(id: Int)
 
     @Query("SELECT * FROM contact_table WHERE name LIKE '%' || :name || '%' ORDER BY name ASC")
     fun searchByName(name: String): List<ContactEntity>

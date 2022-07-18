@@ -46,6 +46,8 @@ class DetailsFragment : Fragment() {
         detailsFragmentViewModel.contact.observe(viewLifecycleOwner){
             binding.etName.text = it.name
             binding.tvNumber.text = it.number.toString()
+            if (it.urlPicture != null)
+                binding.avatar.setImageURI(Uri.parse(it.urlPicture))
         }
 
         detailsFragmentViewModel.onCreate(args.id)

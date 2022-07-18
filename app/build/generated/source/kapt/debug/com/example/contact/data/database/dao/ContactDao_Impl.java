@@ -34,14 +34,14 @@ public final class ContactDao_Impl implements ContactDao {
 
   private final EntityDeletionOrUpdateAdapter<ContactEntity> __updateAdapterOfContactEntity;
 
-  private final SharedSQLiteStatement __preparedStmtOfDeleteContactByName;
+  private final SharedSQLiteStatement __preparedStmtOfDeleteContactById;
 
   public ContactDao_Impl(RoomDatabase __db) {
     this.__db = __db;
     this.__insertionAdapterOfContactEntity = new EntityInsertionAdapter<ContactEntity>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR REPLACE INTO `contact_table` (`id`,`name`,`number`) VALUES (nullif(?, 0),?,?)";
+        return "INSERT OR REPLACE INTO `contact_table` (`id`,`name`,`number`,`picture`) VALUES (nullif(?, 0),?,?,?)";
       }
 
       @Override
@@ -53,6 +53,11 @@ public final class ContactDao_Impl implements ContactDao {
           stmt.bindString(2, value.getName());
         }
         stmt.bindLong(3, value.getNumber());
+        if (value.getUrlPicture() == null) {
+          stmt.bindNull(4);
+        } else {
+          stmt.bindString(4, value.getUrlPicture());
+        }
       }
     };
     this.__deletionAdapterOfContactEntity = new EntityDeletionOrUpdateAdapter<ContactEntity>(__db) {
@@ -69,7 +74,7 @@ public final class ContactDao_Impl implements ContactDao {
     this.__updateAdapterOfContactEntity = new EntityDeletionOrUpdateAdapter<ContactEntity>(__db) {
       @Override
       public String createQuery() {
-        return "UPDATE OR REPLACE `contact_table` SET `id` = ?,`name` = ?,`number` = ? WHERE `id` = ?";
+        return "UPDATE OR REPLACE `contact_table` SET `id` = ?,`name` = ?,`number` = ?,`picture` = ? WHERE `id` = ?";
       }
 
       @Override
@@ -81,10 +86,15 @@ public final class ContactDao_Impl implements ContactDao {
           stmt.bindString(2, value.getName());
         }
         stmt.bindLong(3, value.getNumber());
-        stmt.bindLong(4, value.getId());
+        if (value.getUrlPicture() == null) {
+          stmt.bindNull(4);
+        } else {
+          stmt.bindString(4, value.getUrlPicture());
+        }
+        stmt.bindLong(5, value.getId());
       }
     };
-    this.__preparedStmtOfDeleteContactByName = new SharedSQLiteStatement(__db) {
+    this.__preparedStmtOfDeleteContactById = new SharedSQLiteStatement(__db) {
       @Override
       public String createQuery() {
         final String _query = "DELETE FROM contact_table WHERE id = ?";
@@ -148,11 +158,11 @@ public final class ContactDao_Impl implements ContactDao {
   }
 
   @Override
-  public Object deleteContactByName(final int id, final Continuation<? super Unit> continuation) {
+  public Object deleteContactById(final int id, final Continuation<? super Unit> continuation) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
-        final SupportSQLiteStatement _stmt = __preparedStmtOfDeleteContactByName.acquire();
+        final SupportSQLiteStatement _stmt = __preparedStmtOfDeleteContactById.acquire();
         int _argIndex = 1;
         _stmt.bindLong(_argIndex, id);
         __db.beginTransaction();
@@ -162,7 +172,7 @@ public final class ContactDao_Impl implements ContactDao {
           return Unit.INSTANCE;
         } finally {
           __db.endTransaction();
-          __preparedStmtOfDeleteContactByName.release(_stmt);
+          __preparedStmtOfDeleteContactById.release(_stmt);
         }
       }
     }, continuation);
@@ -178,6 +188,7 @@ public final class ContactDao_Impl implements ContactDao {
       final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
       final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
       final int _cursorIndexOfNumber = CursorUtil.getColumnIndexOrThrow(_cursor, "number");
+      final int _cursorIndexOfUrlPicture = CursorUtil.getColumnIndexOrThrow(_cursor, "picture");
       final List<ContactEntity> _result = new ArrayList<ContactEntity>(_cursor.getCount());
       while(_cursor.moveToNext()) {
         final ContactEntity _item;
@@ -191,7 +202,13 @@ public final class ContactDao_Impl implements ContactDao {
         }
         final long _tmpNumber;
         _tmpNumber = _cursor.getLong(_cursorIndexOfNumber);
-        _item = new ContactEntity(_tmpId,_tmpName,_tmpNumber);
+        final String _tmpUrlPicture;
+        if (_cursor.isNull(_cursorIndexOfUrlPicture)) {
+          _tmpUrlPicture = null;
+        } else {
+          _tmpUrlPicture = _cursor.getString(_cursorIndexOfUrlPicture);
+        }
+        _item = new ContactEntity(_tmpId,_tmpName,_tmpNumber,_tmpUrlPicture);
         _result.add(_item);
       }
       return _result;
@@ -213,6 +230,7 @@ public final class ContactDao_Impl implements ContactDao {
       final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
       final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
       final int _cursorIndexOfNumber = CursorUtil.getColumnIndexOrThrow(_cursor, "number");
+      final int _cursorIndexOfUrlPicture = CursorUtil.getColumnIndexOrThrow(_cursor, "picture");
       final ContactEntity _result;
       if(_cursor.moveToFirst()) {
         final int _tmpId;
@@ -225,7 +243,13 @@ public final class ContactDao_Impl implements ContactDao {
         }
         final long _tmpNumber;
         _tmpNumber = _cursor.getLong(_cursorIndexOfNumber);
-        _result = new ContactEntity(_tmpId,_tmpName,_tmpNumber);
+        final String _tmpUrlPicture;
+        if (_cursor.isNull(_cursorIndexOfUrlPicture)) {
+          _tmpUrlPicture = null;
+        } else {
+          _tmpUrlPicture = _cursor.getString(_cursorIndexOfUrlPicture);
+        }
+        _result = new ContactEntity(_tmpId,_tmpName,_tmpNumber,_tmpUrlPicture);
       } else {
         _result = null;
       }
@@ -252,6 +276,7 @@ public final class ContactDao_Impl implements ContactDao {
       final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
       final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
       final int _cursorIndexOfNumber = CursorUtil.getColumnIndexOrThrow(_cursor, "number");
+      final int _cursorIndexOfUrlPicture = CursorUtil.getColumnIndexOrThrow(_cursor, "picture");
       final List<ContactEntity> _result = new ArrayList<ContactEntity>(_cursor.getCount());
       while(_cursor.moveToNext()) {
         final ContactEntity _item;
@@ -265,7 +290,13 @@ public final class ContactDao_Impl implements ContactDao {
         }
         final long _tmpNumber;
         _tmpNumber = _cursor.getLong(_cursorIndexOfNumber);
-        _item = new ContactEntity(_tmpId,_tmpName,_tmpNumber);
+        final String _tmpUrlPicture;
+        if (_cursor.isNull(_cursorIndexOfUrlPicture)) {
+          _tmpUrlPicture = null;
+        } else {
+          _tmpUrlPicture = _cursor.getString(_cursorIndexOfUrlPicture);
+        }
+        _item = new ContactEntity(_tmpId,_tmpName,_tmpNumber,_tmpUrlPicture);
         _result.add(_item);
       }
       return _result;

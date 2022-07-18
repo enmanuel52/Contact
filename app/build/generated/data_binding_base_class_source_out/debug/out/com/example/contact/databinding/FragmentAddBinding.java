@@ -6,23 +6,36 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.Toolbar;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.contact.R;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class FragmentAddBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
-  public final Toolbar addToolbar;
+  public final MaterialToolbar addToolbar;
+
+  @NonNull
+  public final AppBarLayout appBar;
+
+  @NonNull
+  public final CircleImageView avatar;
+
+  @NonNull
+  public final FloatingActionButton avatarBut;
 
   @NonNull
   public final TextInputLayout etLayoutName;
@@ -33,19 +46,28 @@ public final class FragmentAddBinding implements ViewBinding {
   @NonNull
   public final TextInputEditText etNumber;
 
-  private FragmentAddBinding(@NonNull ConstraintLayout rootView, @NonNull Toolbar addToolbar,
+  @NonNull
+  public final ExtendedFloatingActionButton saveBut;
+
+  private FragmentAddBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull MaterialToolbar addToolbar, @NonNull AppBarLayout appBar,
+      @NonNull CircleImageView avatar, @NonNull FloatingActionButton avatarBut,
       @NonNull TextInputLayout etLayoutName, @NonNull TextInputEditText etName,
-      @NonNull TextInputEditText etNumber) {
+      @NonNull TextInputEditText etNumber, @NonNull ExtendedFloatingActionButton saveBut) {
     this.rootView = rootView;
     this.addToolbar = addToolbar;
+    this.appBar = appBar;
+    this.avatar = avatar;
+    this.avatarBut = avatarBut;
     this.etLayoutName = etLayoutName;
     this.etName = etName;
     this.etNumber = etNumber;
+    this.saveBut = saveBut;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -71,8 +93,26 @@ public final class FragmentAddBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.addToolbar;
-      Toolbar addToolbar = ViewBindings.findChildViewById(rootView, id);
+      MaterialToolbar addToolbar = ViewBindings.findChildViewById(rootView, id);
       if (addToolbar == null) {
+        break missingId;
+      }
+
+      id = R.id.appBar;
+      AppBarLayout appBar = ViewBindings.findChildViewById(rootView, id);
+      if (appBar == null) {
+        break missingId;
+      }
+
+      id = R.id.avatar;
+      CircleImageView avatar = ViewBindings.findChildViewById(rootView, id);
+      if (avatar == null) {
+        break missingId;
+      }
+
+      id = R.id.avatar_but;
+      FloatingActionButton avatarBut = ViewBindings.findChildViewById(rootView, id);
+      if (avatarBut == null) {
         break missingId;
       }
 
@@ -94,8 +134,14 @@ public final class FragmentAddBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAddBinding((ConstraintLayout) rootView, addToolbar, etLayoutName, etName,
-          etNumber);
+      id = R.id.saveBut;
+      ExtendedFloatingActionButton saveBut = ViewBindings.findChildViewById(rootView, id);
+      if (saveBut == null) {
+        break missingId;
+      }
+
+      return new FragmentAddBinding((CoordinatorLayout) rootView, addToolbar, appBar, avatar,
+          avatarBut, etLayoutName, etName, etNumber, saveBut);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

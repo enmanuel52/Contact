@@ -13,4 +13,6 @@
     <string name="tDetails">Details</string>
     <string name="call">Call</string>
     <string name="search">Search</string>
+    <string name="perfil">Perfil</string>
+    <string name="remove">Remove Photo</string>
 </resources>

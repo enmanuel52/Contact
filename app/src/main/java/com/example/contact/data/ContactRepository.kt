@@ -1,12 +1,8 @@
 package com.example.contact.data
 
-import androidx.lifecycle.LiveData
 import com.example.contact.data.database.dao.ContactDao
 import com.example.contact.data.database.entities.ContactEntity
 import com.example.contact.domain.repository.Repository
-import dagger.Module
-import dagger.hilt.InstallIn
-import dagger.hilt.components.SingletonComponent
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
@@ -31,5 +27,5 @@ class ContactRepository @Inject constructor(
 
     override fun searchByName(name: String): List<ContactEntity> = contactDao.searchByName(name)
 
-    suspend fun deleteContactByName(id: Int) = contactDao.deleteContactByName(id)
+    suspend fun deleteContactById(id: Int) = contactDao.deleteContactById(id)
 }

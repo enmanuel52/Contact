@@ -1335,6 +1335,8 @@ color design_fab_stroke_top_inner_color
 color design_fab_stroke_top_outer_color
 color design_icon_tint
 color design_snackbar_background_color
+color dialog_choose_icon_color
+color dialog_choose_text_color
 color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
@@ -2607,7 +2609,11 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable detete_icon
 drawable edit_icon
+drawable ic_baseline_camera_alt_24
+drawable ic_baseline_cancel_24
+drawable ic_baseline_collections_24
 drawable ic_baseline_contacts_24
+drawable ic_baseline_person_pin_24
 drawable ic_baseline_phonelink_ring_24
 drawable ic_baseline_search_24
 drawable ic_clock_black_24dp
@@ -2622,6 +2628,8 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_person_110935
+drawable ic_photo_black_48dp
+drawable ic_photo_camera_black_48dp
 drawable ic_undraw_social_bio_re_0t9u
 drawable icon_save
 drawable m3_appbar_background
@@ -2665,6 +2673,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable person_96px
 drawable selector_recycler
 drawable shape_avatar
 drawable splash_background
@@ -2779,6 +2788,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id appBar
 id arc
 id asConfigured
 id async
@@ -2787,6 +2797,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id avatar
+id avatar_but
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2802,6 +2813,7 @@ id butCall
 id buttonPanel
 id cache_measures
 id callMeasure
+id cancel
 id cancel_action
 id cancel_button
 id carryVelocity
@@ -2918,6 +2930,7 @@ id fragmentContainerView
 id fragment_container_view_tag
 id frost
 id fullscreen_header
+id gallery
 id ghost_view
 id ghost_view_holder
 id gone
@@ -2973,6 +2986,8 @@ id listMode
 id list_item
 id locale
 id ltr
+id lytCameraPick
+id lytGalleryPick
 id mainFragment
 id mainRecycler
 id mainToolbar
@@ -3074,6 +3089,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id photo
 id pin
 id position
 id postLayout
@@ -3085,6 +3101,7 @@ id progress_title
 id radio
 id ratio
 id rectangles
+id remove
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3094,6 +3111,7 @@ id rotate_scroll_wheel
 id rounded
 id row_index_key
 id rtl
+id saveBut
 id saveIcon
 id save_non_transition_alpha
 id save_overlay_view
@@ -3219,7 +3237,6 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tvLetter
 id tvName
 id tvNumber
 id ucrop
@@ -3363,10 +3380,12 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_choose_app
 layout dynamic_feature_install_fragment
 layout fragment_add
 layout fragment_details
 layout fragment_main
+layout layut_input_modal
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3496,6 +3515,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_cancel
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -3507,13 +3527,20 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string error_camera_app_not_found
+string error_failed_pick_gallery_image
+string error_failed_to_compress_image
+string error_failed_to_create_camera_image_file
+string error_failed_to_crop_image
 string error_icon_content_description
+string error_task_cancelled
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string image_picker_provider_authority_suffix
 string installation_cancelled
 string installation_failed
 string installing_module
@@ -3601,7 +3628,10 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string perfil
+string permission_camera_denied
 string progress
+string remove
 string retry
 string scrollable
 string search
@@ -3609,6 +3639,9 @@ string search_menu_title
 string status_bar_notification_info_overflow
 string tAdd
 string tDetails
+string title_camera
+string title_choose_image_provider
+string title_gallery
 string tv_email
 string tv_recycler_name
 string tv_recycler_number
@@ -4235,6 +4268,7 @@ style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
 style Theme_PlayCore_Transparent
+style Theme_Transparent_ImagePicker
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark
@@ -4861,6 +4895,8 @@ styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration
 styleable include constraintSet
 styleable ucrop_AspectRatioTextView ucrop_artv_ratio_title ucrop_artv_ratio_x ucrop_artv_ratio_y
 styleable ucrop_UCropView ucrop_aspect_ratio_x ucrop_aspect_ratio_y ucrop_circle_dimmed_layer ucrop_dimmed_color ucrop_frame_color ucrop_frame_stroke_size ucrop_grid_color ucrop_grid_column_count ucrop_grid_row_count ucrop_grid_stroke_size ucrop_show_frame ucrop_show_grid ucrop_show_oval_crop_frame
+xml file_paths
+xml image_picker_provider_paths
 xml searchable
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end

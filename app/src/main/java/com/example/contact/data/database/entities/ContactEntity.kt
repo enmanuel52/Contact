@@ -10,4 +10,5 @@ data class ContactEntity(
     @ColumnInfo(name = "id") val id: Int = 0,
     @ColumnInfo(name = "name") val name: String,
     @ColumnInfo(name = "number") val number: Long,
+    @ColumnInfo(name = "picture") val urlPicture: String? = null,
 )

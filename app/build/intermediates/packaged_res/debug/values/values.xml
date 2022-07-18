@@ -27,6 +27,9 @@
     <color name="secondaryTextColor">#ffffff</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+    <color name="ucrop_color_statusbar">@color/secondaryDarkColor</color>
+    <color name="ucrop_color_toolbar">@color/secondaryColor</color>
+    <color name="ucrop_color_widget_active">@color/secondaryDarkColor</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Contact</string>
     <string name="call">Call</string>
@@ -34,6 +37,8 @@
     <string name="menu_item_add">Add</string>
     <string name="menu_item_delete">Delete</string>
     <string name="menu_item_save">Save</string>
+    <string name="perfil">Perfil</string>
+    <string name="remove">Remove Photo</string>
     <string name="scrollable">Scroll</string>
     <string name="search">Search</string>
     <string name="tAdd">Add/ Edit</string>
