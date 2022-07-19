@@ -1,190 +1,194 @@
 [
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_ic_baseline_contacts_24.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/ic_baseline_contacts_24.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_shape_avatar.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\shape_avatar.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_ic_baseline_search_24.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/ic_baseline_search_24.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_ic_baseline_person_pin_24.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\ic_baseline_person_pin_24.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_ic_undraw_social_bio_re_0t9u.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/ic_undraw_social_bio_re_0t9u.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable-xhdpi_contact.png.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable-xhdpi\\contact.png"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.example.contact.app-main-60:/mipmap-mdpi/ic_launcher.png"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_ic_baseline_contacts_24.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\ic_baseline_contacts_24.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_person_96px.png.flat",
-        "source": "com.example.contact.app-main-60:/drawable/person_96px.png"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\layout_recycler_layout.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\layout\\recycler_layout.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/menu_fragment_details_toolbar.xml.flat",
-        "source": "com.example.contact.app-main-60:/menu/fragment_details_toolbar.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_back_icon.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\back_icon.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/menu_fragment_main_toolbar.xml.flat",
-        "source": "com.example.contact.app-main-60:/menu/fragment_main_toolbar.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\layout_fragment_details.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\layout\\fragment_details.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.example.contact.app-main-60:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\layout_layut_input_modal.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\layout\\layut_input_modal.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_person_96px.png.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\person_96px.png"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_selector_recycler.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/selector_recycler.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/layout_recycler_layout.xml.flat",
-        "source": "com.example.contact.app-main-60:/layout/recycler_layout.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_selector_recycler.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\selector_recycler.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_splash_background.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/splash_background.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_ic_baseline_phonelink_ring_24.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\ic_baseline_phonelink_ring_24.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable-anydpi-v24_contact.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable-anydpi-v24/contact.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_edit_icon.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/edit_icon.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_ic_undraw_social_bio_re_0t9u.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\ic_undraw_social_bio_re_0t9u.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_ic_baseline_collections_24.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/ic_baseline_collections_24.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/layout_fragment_details.xml.flat",
-        "source": "com.example.contact.app-main-60:/layout/fragment_details.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable-xxhdpi_contact.png.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable-xxhdpi\\contact.png"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable-xhdpi_contact.png.flat",
-        "source": "com.example.contact.app-main-60:/drawable-xhdpi/contact.png"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable-hdpi_contact.png.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable-hdpi\\contact.png"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_back_icon.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/back_icon.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/xml_file_paths.xml.flat",
-        "source": "com.example.contact.app-main-60:/xml/file_paths.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_ic_baseline_person_pin_24.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/ic_baseline_person_pin_24.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_detete_icon.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\detete_icon.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_ic_baseline_phonelink_ring_24.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/ic_baseline_phonelink_ring_24.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_ic_baseline_camera_alt_24.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\ic_baseline_camera_alt_24.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable-hdpi_contact.png.flat",
-        "source": "com.example.contact.app-main-60:/drawable-hdpi/contact.png"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable-anydpi-v24_contact.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable-anydpi-v24\\contact.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable-mdpi_contact.png.flat",
-        "source": "com.example.contact.app-main-60:/drawable-mdpi/contact.png"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_splash_background.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\splash_background.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.example.contact.app-main-60:/mipmap-hdpi/ic_launcher.png"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\layout_fragment_main.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\layout\\fragment_main.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_ic_baseline_camera_alt_24.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/ic_baseline_camera_alt_24.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\menu_fragment_add_toolbar.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\menu\\fragment_add_toolbar.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable-xxhdpi_contact.png.flat",
-        "source": "com.example.contact.app-main-60:/drawable-xxhdpi/contact.png"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_edit_icon.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\edit_icon.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/layout_fragment_add.xml.flat",
-        "source": "com.example.contact.app-main-60:/layout/fragment_add.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\menu_fragment_main_toolbar.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\menu\\fragment_main_toolbar.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.example.contact.app-main-60:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable-mdpi_contact.png.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable-mdpi\\contact.png"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/menu_fragment_add_toolbar.xml.flat",
-        "source": "com.example.contact.app-main-60:/menu/fragment_add_toolbar.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/xml_searchable.xml.flat",
-        "source": "com.example.contact.app-main-60:/xml/searchable.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\navigation\\nav_graph.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_shape_avatar.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/shape_avatar.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\xml_file_paths.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\xml\\file_paths.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.example.contact.app-main-60:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\menu_fragment_details_toolbar.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\menu\\fragment_details_toolbar.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.example.contact.app-main-60:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_ic_baseline_search_24.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\ic_baseline_search_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\xml_searchable.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\xml\\searchable.xml"
+    },
+    {
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_ic_baseline_cancel_24.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\ic_baseline_cancel_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\layout_fragment_add.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\layout\\fragment_add.xml"
     },
     {
         "merged": "com.example.contact.app-merged_res-58:/navigation_nav_graph.xml.flat",
         "source": "com.example.contact.app-main-60:/navigation/nav_graph.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_ic_baseline_cancel_24.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/ic_baseline_cancel_24.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_ic_baseline_collections_24.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\ic_baseline_collections_24.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_add_icon.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/add_icon.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_ic_person_110935.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\ic_person_110935.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.example.contact.app-main-60:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/layout_fragment_main.xml.flat",
-        "source": "com.example.contact.app-main-60:/layout/fragment_main.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_add_icon.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\add_icon.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.example.contact.app-main-60:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.example.contact.app-main-60:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_icon_save.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/icon_save.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/layout_layut_input_modal.xml.flat",
-        "source": "com.example.contact.app-main-60:/layout/layut_input_modal.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.contact.app-merged_res-58:/layout_activity_main.xml.flat",
-        "source": "com.example.contact.app-main-60:/layout/activity_main.xml"
-    },
-    {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_ic_person_110935.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/ic_person_110935.xml"
-    },
-    {
-        "merged": "com.example.contact.app-merged_res-58:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.example.contact.app-main-60:/mipmap-mdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "com.example.contact.app-merged_res-58:/drawable_detete_icon.xml.flat",
-        "source": "com.example.contact.app-main-60:/drawable/detete_icon.xml"
+        "merged": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-merged_res-58:\\drawable_icon_save.xml.flat",
+        "source": "C:\\Users\\Enmanuel\\.gradle\\daemon\\7.3.3\\com.example.contact.app-main-60:\\drawable\\icon_save.xml"
     }
 ]
