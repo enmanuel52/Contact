@@ -19,15 +19,13 @@
         <entry key="..\:/Enmanuel/Projects/Contact/app/src/main/res/menu/fragment_details_toolbar.xml" value="0.1875" />
         <entry key="..\:/Enmanuel/Projects/Contact/app/src/main/res/menu/fragment_main_toolbar.xml" value="0.1875" />
         <entry key="..\:/Enmanuel/Projects/Contact/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1255" />
-        <entry key="..\:/Estudios/Programacion/Desarrollo movil/AndroidStudioProjects/Contact/app/src/main/res/drawable/ic_baseline_camera_alt_24.xml" value="0.1" />
-        <entry key="..\:/Estudios/Programacion/Desarrollo movil/AndroidStudioProjects/Contact/app/src/main/res/drawable/ic_baseline_person_pin_24.xml" value="0.1" />
-        <entry key="..\:/Estudios/Programacion/Desarrollo movil/AndroidStudioProjects/Contact/app/src/main/res/drawable/shape_avatar.xml" value="0.162" />
-        <entry key="..\:/Estudios/Programacion/Desarrollo movil/AndroidStudioProjects/Contact/app/src/main/res/drawable/splash_background.xml" value="0.162" />
-        <entry key="..\:/Estudios/Programacion/Desarrollo movil/AndroidStudioProjects/Contact/app/src/main/res/layout/fragment_add.xml" value="0.22" />
-        <entry key="..\:/Estudios/Programacion/Desarrollo movil/AndroidStudioProjects/Contact/app/src/main/res/layout/fragment_details.xml" value="0.20677083333333332" />
-        <entry key="..\:/Estudios/Programacion/Desarrollo movil/AndroidStudioProjects/Contact/app/src/main/res/layout/layut_input_modal.xml" value="0.33" />
-        <entry key="..\:/Estudios/Programacion/Desarrollo movil/AndroidStudioProjects/Contact/app/src/main/res/layout/recycler_layout.xml" value="0.25" />
-        <entry key="..\:/Estudios/Programacion/Desarrollo movil/AndroidStudioProjects/Contact/app/src/main/res/xml/file_paths.xml" value="0.20416666666666666" />
+        <entry key="..\:/Estudios/Programacion/Desarrollo movil/AndroidStudioProjects/Contact/app/src/main/res/drawable/back_icon.xml" value="0.118" />
+        <entry key="..\:/Estudios/Programacion/Desarrollo movil/AndroidStudioProjects/Contact/app/src/main/res/drawable/detete_icon.xml" value="0.118" />
+        <entry key="..\:/Estudios/Programacion/Desarrollo movil/AndroidStudioProjects/Contact/app/src/main/res/drawable/ic_baseline_collections_24.xml" value="0.118" />
+        <entry key="..\:/Estudios/Programacion/Desarrollo movil/AndroidStudioProjects/Contact/app/src/main/res/drawable/ic_round_check_circle_24.xml" value="0.1455" />
+        <entry key="..\:/Estudios/Programacion/Desarrollo movil/AndroidStudioProjects/Contact/app/src/main/res/drawable/ic_round_check_circle_outline_24.xml" value="0.1" />
+        <entry key="..\:/Estudios/Programacion/Desarrollo movil/AndroidStudioProjects/Contact/app/src/main/res/layout/recycler_layout.xml" value="0.18" />
+        <entry key="..\:/Estudios/Programacion/Desarrollo movil/AndroidStudioProjects/Contact/app/src/main/res/menu/fragment_main_toolbar.xml" value="0.20677083333333332" />
         <entry key="..\:/Users/enmanuel52/AndroidStudioProjects/Contact/app/src/main/res/drawable/ic_launcher_background.xml" value="0.108" />
         <entry key="..\:/Users/enmanuel52/AndroidStudioProjects/Contact/app/src/main/res/drawable/ic_person_110935.xml" value="0.1" />
         <entry key="..\:/Users/enmanuel52/AndroidStudioProjects/Contact/app/src/main/res/drawable/ic_undraw_social_bio_re_0t9u.xml" value="0.121" />
