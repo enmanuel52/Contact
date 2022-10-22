@@ -544,7 +544,7 @@ public final class DaggerContactApp_HiltComponents_SingletonC extends ContactApp
           return (T) new DetailsFragmentViewModel(viewModelCImpl.loadContactUseCase(), viewModelCImpl.deleteContactUseCase());
 
           case 2: // com.example.contact.ui.viewmodel.fragment.MainFragmentViewModel 
-          return (T) new MainFragmentViewModel(viewModelCImpl.loadAllContactsUseCase(), viewModelCImpl.searchByNameUseCase());
+          return (T) new MainFragmentViewModel(viewModelCImpl.loadAllContactsUseCase(), viewModelCImpl.searchByNameUseCase(), viewModelCImpl.deleteContactUseCase());
 
           default: throw new AssertionError(id);
         }

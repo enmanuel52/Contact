@@ -1351,6 +1351,7 @@ color ic_launcher_background
 color light_blue_200
 color light_blue_500
 color light_blue_700
+color light_gray
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color

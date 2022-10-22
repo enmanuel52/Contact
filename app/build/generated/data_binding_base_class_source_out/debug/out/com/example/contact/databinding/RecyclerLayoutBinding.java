@@ -24,12 +24,16 @@ public final class RecyclerLayoutBinding implements ViewBinding {
   public final CircleImageView avatar;
 
   @NonNull
+  public final ConstraintLayout container;
+
+  @NonNull
   public final TextView tvName;
 
   private RecyclerLayoutBinding(@NonNull ConstraintLayout rootView, @NonNull CircleImageView avatar,
-      @NonNull TextView tvName) {
+      @NonNull ConstraintLayout container, @NonNull TextView tvName) {
     this.rootView = rootView;
     this.avatar = avatar;
+    this.container = container;
     this.tvName = tvName;
   }
 
@@ -66,13 +70,15 @@ public final class RecyclerLayoutBinding implements ViewBinding {
         break missingId;
       }
 
+      ConstraintLayout container = (ConstraintLayout) rootView;
+
       id = R.id.tvName;
       TextView tvName = ViewBindings.findChildViewById(rootView, id);
       if (tvName == null) {
         break missingId;
       }
 
-      return new RecyclerLayoutBinding((ConstraintLayout) rootView, avatar, tvName);
+      return new RecyclerLayoutBinding((ConstraintLayout) rootView, avatar, container, tvName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

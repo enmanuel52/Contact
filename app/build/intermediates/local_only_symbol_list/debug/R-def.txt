@@ -11,6 +11,7 @@ color ic_launcher_background
 color light_blue_200
 color light_blue_500
 color light_blue_700
+color light_gray
 color primaryColor
 color primaryDarkColor
 color primaryLightColor
@@ -63,6 +64,7 @@ id avatar
 id avatar_but
 id butCall
 id cancel
+id container
 id deleteIcon
 id detailsFragment
 id detailsToolbar

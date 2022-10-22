@@ -22,6 +22,7 @@ import com.github.dhaval2404.imagepicker.ImagePicker
 import com.google.android.material.snackbar.Snackbar
 import com.squareup.picasso.Picasso
 import dagger.hilt.android.AndroidEntryPoint
+import java.util.*
 
 @AndroidEntryPoint
 class AddFragment : Fragment() {
@@ -121,7 +122,11 @@ class AddFragment : Fragment() {
                         if (number.length <= 10) {
                             addFragmentViewModel.onSave(
                                 ContactEntity(
-                                    name = name,
+                                    name = name.replaceFirstChar {
+                                        if (it.isLowerCase()) it.titlecase(
+                                            Locale.getDefault()
+                                        ) else it.toString()
+                                    },
                                     number = number.toLong(),
                                     urlPicture = url,
                                 )
