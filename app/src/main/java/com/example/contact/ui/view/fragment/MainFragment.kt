@@ -10,6 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.flowWithLifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.contact.Action
@@ -20,6 +21,7 @@ import com.example.contact.domain.model.toDomain
 import com.example.contact.ui.adapter.RecyclerAdapter
 import com.example.contact.ui.viewmodel.fragment.MainFragmentViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
@@ -55,42 +57,33 @@ class MainFragment : Fragment() {
 
     private fun subscribeUi() {
 
-        viewLifecycleOwner.lifecycleScope.launch {
-            viewModel.contactList.flowWithLifecycle(lifecycle, Lifecycle.State.STARTED)
-                .collectLatest { list ->
-                    recyclerAdapter.items = list.map {
-                        it.toDomain()
-                    }
-                    recyclerAdapter.notifyDataSetChanged()
-                }
+        collectFlow(viewModel.contactList){ list ->
+            recyclerAdapter.items = list.map {
+                it.toDomain()
+            }
+            recyclerAdapter.notifyDataSetChanged()
         }
 
-        viewLifecycleOwner.lifecycleScope.launch {
-            viewModel.contactListState.flowWithLifecycle(lifecycle, Lifecycle.State.STARTED)
-                .collectLatest { list ->
-                    recyclerAdapter.items = list.map {
-                        it.toDomain()
-                    }
-                    recyclerAdapter.notifyDataSetChanged()
-                }
+        collectFlow(viewModel.contactListState){ list ->
+            recyclerAdapter.items = list.map {
+                it.toDomain()
+            }
+            recyclerAdapter.notifyDataSetChanged()
         }
 
-        viewLifecycleOwner.lifecycleScope.launch {
-            viewModel.selectedIds.flowWithLifecycle(lifecycle, Lifecycle.State.STARTED)
-                .collectLatest { list ->
-                    recyclerAdapter.selectedIds = list
-                    recyclerAdapter.notifyDataSetChanged()
+        collectFlow(viewModel.selectedIds){ list ->
+            recyclerAdapter.selectedIds = list
+            recyclerAdapter.notifyDataSetChanged()
 
-                    binding.mainToolbar.apply {
-                        if (list.isEmpty()) {
-                            title = getString(R.string.app_name)
-                            menu.findItem(R.id.deleteIcon).icon.setVisible(false, false)
-                        } else {
-                            title = "${list.size} items selected"
-                            menu.findItem(R.id.deleteIcon).icon.setVisible(true, false)
-                        }
-                    }
+            binding.mainToolbar.apply {
+                if (list.isEmpty()) {
+                    title = getString(R.string.app_name)
+                    menu.findItem(R.id.deleteIcon).icon.setVisible(false, false)
+                } else {
+                    title = "${list.size} items selected"
+                    menu.findItem(R.id.deleteIcon).icon.setVisible(true, false)
                 }
+            }
         }
 
 
@@ -175,5 +168,13 @@ class MainFragment : Fragment() {
 
         binding.mainRecycler.layoutManager = LinearLayoutManager(requireContext())
         binding.mainRecycler.adapter = recyclerAdapter
+    }
+}
+
+fun <T> Fragment.collectFlow(flow: Flow<T>, collect: suspend (T) -> Unit) {
+    viewLifecycleOwner.lifecycleScope.launch {
+        repeatOnLifecycle(Lifecycle.State.STARTED){
+            flow.collectLatest(collect)
+        }
     }
 }
