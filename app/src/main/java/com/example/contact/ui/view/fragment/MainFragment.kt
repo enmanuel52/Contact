@@ -15,8 +15,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.contact.Action
 import com.example.contact.R
 import com.example.contact.SelectedClickListener
-import com.example.contact.data.model.toContactItem
 import com.example.contact.databinding.FragmentMainBinding
+import com.example.contact.domain.model.toDomain
 import com.example.contact.ui.adapter.RecyclerAdapter
 import com.example.contact.ui.viewmodel.fragment.MainFragmentViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -39,45 +39,8 @@ class MainFragment : Fragment() {
         _binding = FragmentMainBinding.inflate(inflater, container, false)
 
         //BODY
-        recyclerAdapter = RecyclerAdapter(object : SelectedClickListener {
-            override fun onSelectedClick(action: Action) {
-                when (action) {
-                    Action.Clear -> {
-                        viewModel.updateIds(Action.Clear)
-                    }
-                    Action.Delete -> {
-                        viewModel.updateIds(Action.Delete)
-                    }
-                    Action.Select -> {}
-                }
-            }
-
-            override fun getIds(): List<Int> = viewModel.seletedIds.value
-
-            override fun onClick(id: Int) {
-                if (getIds().isEmpty()) {
-                    //navigate
-                    findNavController().navigate(
-                        MainFragmentDirections.actionMainFragmentToDetailsFragment(
-                            id
-                        )
-                    )
-                } else {
-                    viewModel.updateIds(Action.Select, id)
-                }
-            }
-
-            override fun onLongClick(id: Int) {
-                viewModel.updateIds(Action.Select, id)
-            }
-
-        })
-
-        binding.mainRecycler.layoutManager = LinearLayoutManager(requireContext())
-        binding.mainRecycler.adapter = recyclerAdapter
-
-        subscribeUi()
         initUi()
+        subscribeUi()
 
         return binding.root
     }
@@ -86,27 +49,36 @@ class MainFragment : Fragment() {
         binding.addBut.setOnClickListener {
             findNavController().navigate(MainFragmentDirections.actionMainFragmentToAddFragment())
         }
+
+        initRecycler()
     }
 
     private fun subscribeUi() {
-        viewModel.getAllContacts()
 
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.contactList.flowWithLifecycle(lifecycle, Lifecycle.State.STARTED)
                 .collectLatest { list ->
                     recyclerAdapter.items = list.map {
-                        it.toContactItem()
+                        it.toDomain()
                     }
                     recyclerAdapter.notifyDataSetChanged()
                 }
         }
 
         viewLifecycleOwner.lifecycleScope.launch {
-            viewModel.seletedIds.flowWithLifecycle(lifecycle, Lifecycle.State.STARTED)
+            viewModel.contactListState.flowWithLifecycle(lifecycle, Lifecycle.State.STARTED)
                 .collectLatest { list ->
-                    recyclerAdapter.items = recyclerAdapter.items.map {
-                        it.copy(selected = list.contains(it.id))
+                    recyclerAdapter.items = list.map {
+                        it.toDomain()
                     }
+                    recyclerAdapter.notifyDataSetChanged()
+                }
+        }
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewModel.selectedIds.flowWithLifecycle(lifecycle, Lifecycle.State.STARTED)
+                .collectLatest { list ->
+                    recyclerAdapter.selectedIds = list
                     recyclerAdapter.notifyDataSetChanged()
 
                     binding.mainToolbar.apply {
@@ -169,11 +141,39 @@ class MainFragment : Fragment() {
             when (it.itemId) {
                 R.id.deleteIcon -> {
                     //after
-                    recyclerAdapter.listener.onSelectedClick(Action.Delete)
+                    viewModel.onSelectedAction(Action.Delete)
                     true
                 }
                 else -> true
             }
         }
+    }
+
+    private fun initRecycler() {
+        recyclerAdapter = RecyclerAdapter(object : SelectedClickListener<Int> {
+
+            override fun getIds(): List<Int> = viewModel.selectedIds.value
+
+            override fun onClick(id: Int) {
+                if (getIds().isEmpty()) {
+                    //navigate
+                    findNavController().navigate(
+                        MainFragmentDirections.actionMainFragmentToDetailsFragment(
+                            id
+                        )
+                    )
+                } else {
+                    viewModel.selectId(id)
+                }
+            }
+
+            override fun onLongClick(id: Int) {
+                viewModel.selectId(id)
+            }
+
+        })
+
+        binding.mainRecycler.layoutManager = LinearLayoutManager(requireContext())
+        binding.mainRecycler.adapter = recyclerAdapter
     }
 }

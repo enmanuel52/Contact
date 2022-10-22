@@ -4,28 +4,26 @@ import android.net.Uri
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.graphics.drawable.toDrawable
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.example.contact.R
 import com.example.contact.SelectedClickListener
-import com.example.contact.data.database.entities.ContactEntity
-import com.example.contact.data.model.ContactItem
 import com.example.contact.databinding.RecyclerLayoutBinding
+import com.example.contact.domain.model.Contact
 
 
-class RecyclerAdapter(val listener: SelectedClickListener) :
+class RecyclerAdapter(val listener: SelectedClickListener<Int>) :
     RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
-    var items: List<ContactItem> = emptyList()
+    var items: List<Contact> = emptyList()
+    var selectedIds = emptyList<Int>()
 
     inner class ViewHolder(private val binding: RecyclerLayoutBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun onBind(position: Int): Unit = binding.run {
-            if (items[position].selected)
-                container.background = container.context.getColor(R.color.light_gray).toDrawable()
-            else
-                container.background = container.context.getColor(R.color.white).toDrawable()
+            avatarCheck.isVisible = selectedIds.contains(items[position].id)
+            avatar.isVisible = !avatarCheck.isVisible
 
             //cambiar es el de la letra
             tvName.text = items[position].name

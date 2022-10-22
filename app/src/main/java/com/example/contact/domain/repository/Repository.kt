@@ -1,12 +1,11 @@
 package com.example.contact.domain.repository
 
-import androidx.lifecycle.LiveData
 import com.example.contact.data.database.entities.ContactEntity
 import kotlinx.coroutines.flow.Flow
 
 interface Repository {
 
-    fun getAllContacts(): List<ContactEntity>
+    fun getAllContacts(): Flow<List<ContactEntity>>
 
     suspend fun insertContact(contactEntity: ContactEntity)
 

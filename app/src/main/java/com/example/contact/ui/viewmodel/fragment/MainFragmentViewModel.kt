@@ -1,7 +1,5 @@
 package com.example.contact.ui.viewmodel.fragment
 
-import android.util.Log
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.contact.Action
@@ -20,40 +18,54 @@ class MainFragmentViewModel @Inject constructor(
     private val searchByNameUseCase: SearchByNameUseCase,
     private val deleteContactUseCase: DeleteContactUseCase,
 ) : ViewModel() {
-    val contactList: MutableStateFlow<List<ContactEntity>> = MutableStateFlow(emptyList())
+    val contactList: Flow<List<ContactEntity>> = loadAllContactsUseCase()
 
+    private val _contactListState = MutableStateFlow<List<ContactEntity>>(emptyList())
+    val contactListState = _contactListState.asStateFlow()
+
+    //for select approach
     private val _selectedIds = MutableStateFlow<List<Int>>(emptyList())
-    val seletedIds = _selectedIds.asStateFlow()
+    val selectedIds = _selectedIds.asStateFlow()
 
-    fun getAllContacts() {
-        contactList.value = loadAllContactsUseCase()
+    init {
+        getAllContacts()
+    }
+
+    fun getAllContacts() = viewModelScope.launch {
+        _contactListState.update {
+            contactList.first()
+        }
     }
 
     fun searchContactByName(name: String) {
-        contactList.value = searchByNameUseCase(name)
+        _contactListState.update {
+            searchByNameUseCase(name)
+        }
     }
 
-    fun updateIds(action: Action, id: Int? = null) = viewModelScope.launch {
+    fun selectId(id: Int) {
+        val ids = _selectedIds.value.toMutableList()
+
+        if (ids.contains(id))
+            ids.remove(id)
+        else
+            ids.add(id)
+
+        _selectedIds.update {
+            ids
+        }
+    }
+
+    fun onSelectedAction(action: Action) = viewModelScope.launch {
         val ids = _selectedIds.value.toMutableList()
         when (action) {
             Action.Delete -> {
                 for (i1 in ids)
                     deleteContactUseCase(i1)
-                    getAllContacts()
-
-                ids.clear()
             }
-            Action.Select -> {
-                if (ids.contains(id))
-                    ids.remove(id)
-                else
-                    ids.add(id!!)
-            }
-            Action.Clear -> {
-                ids.clear()
-            }
+            Action.Clear -> {}
         }
-        Log.d("My Ids", ids.toString())
+        ids.clear()
         _selectedIds.update {
             ids
         }

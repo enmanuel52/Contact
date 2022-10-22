@@ -1,23 +1,16 @@
 package com.example.contact
 
-interface ClickListener {
+interface ClickListener<I> {
 
-    fun onClick(id: Int)
+    fun onClick(id: I)
 
-    fun onLongClick(id: Int)
+    fun onLongClick(id: I)
 }
 
-interface SelectedClickListener : ClickListener {
-
+interface SelectedClickListener<I> : ClickListener<I> {
     /**
-     * @param [action] what to do
-     * Do some action with the elements selected by their ids*/
-    fun onSelectedClick(action: Action)
-
-    /**
-     * @return a [List] of [Int]
-     * a list of elements ids*/
-    fun getIds(): List<Int>
+     * A list of selected elements ids*/
+    fun getIds(): List<I>
 }
 
-enum class Action { Select, Clear, Delete }
+enum class Action { Clear, Delete }

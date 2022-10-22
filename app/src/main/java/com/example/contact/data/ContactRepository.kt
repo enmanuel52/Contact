@@ -4,6 +4,7 @@ import com.example.contact.data.database.dao.ContactDao
 import com.example.contact.data.database.entities.ContactEntity
 import com.example.contact.domain.repository.Repository
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
@@ -13,7 +14,7 @@ class ContactRepository @Inject constructor(
 ): Repository{
 
     //only from database
-    override fun getAllContacts()= contactDao.getAllContacts()
+    override fun getAllContacts(): Flow<List<ContactEntity>> = contactDao.getAllContacts()
 
     override suspend fun insertContact(contactEntity: ContactEntity) = withContext(Dispatchers.IO){
         contactDao.insertContact(contactEntity)
